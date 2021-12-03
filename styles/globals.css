@@ -1,0 +1,151 @@
+/* Import OpenSans and Lusitana  */
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.sans {
+  font-family: Open Sans, sans-serif;
+}
+
+.serif {
+  font-family: Lusitana, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.h-110 {
+  height: 110%;
+}
+
+.h-120 {
+  height: 120%;
+}
+
+.h-130 {
+  height: 130%;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.swiper-button-prev::after {
+  color: rgb(255, 228, 228);
+}
+
+.swiper-button-next::after {
+  color: rgb(255, 228, 228);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+/* Tailwind Derivatives */
+.link-container {
+  @apply absolute text-gray-100 pt-1 right-1 md:right-5 text-right;
+}
+
+.navbar-link {
+  @apply bg-black hover:bg-gray-800 py-4 px-8 block;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  .web {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  .web {
+    display: block;
+  }
+}
+
+.videowrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div .night-bg{
+  background-color: #000;
+  z-index: -100;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "tedxstc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@madzadev/image-slider": "^1.0.8",
+    "animate.css": "^4.1.1",
+    "bad-words": "^3.0.4",
+    "embla-carousel-react": "^6.0.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "next": "11.1.2",
+    "next-connect": "^0.11.0",
+    "next-images": "^1.8.4",
+    "next-transpile-modules": "^8.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "serverless-mysql": "^1.5.4",
+    "sharp": "^0.29.2",
+    "swiper": "^7.0.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
+  }
+}
