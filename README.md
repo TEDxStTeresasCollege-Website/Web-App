@@ -7,8 +7,8 @@ I will be assuming you know the basics of GitHub which includes making a branch 
   1. Our Website _**currently**_ will be hosted on EC2(t2.micro) Machines on AWS Cloud Platform.
   2. Our domain _**currently**_ is being handled by GoDaddy.
   3. EC2 Machine will run on Linux. 
-  4. DB - MySQL
-  5. Backend(API) - REST
+  4. DB - MySQL (For this instance)
+  5. Backend(API) 
   6. Payment Gateway - RazorPay
 
 ## Instructions 
