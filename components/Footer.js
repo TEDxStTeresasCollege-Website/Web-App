@@ -3,18 +3,13 @@ import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-    const backgroundFooter = {
-        backgroundColor: "black",
-        color: "white",
-        zIndex: "-10",
-    }
     return (
-        <footer className="w-full text-xs md:text-sm relative min-h-full sans" style={backgroundFooter}>
+        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black">
 
-            <div className="relative -z-20 top-0 w-full h-full">
+            <div className="relative top-0 w-full h-full">
                 <img className="absolute object-contain w-full block lg:hidden" src="/mobile/footer.png"></img>
                 <img className="absolute object-contain hidden lg:block" src="/web/footer.png"></img>
-                <div className="relative w-full h-full top-0">
+                <div className="relative w-full h-full top-0 z-50">
                     <div className="relative top-20 lg:top-0 w-full p-10 pt-16">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
@@ -51,9 +46,9 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="text-right float-right">
-                                <div className="text-right bg-gray-900 p-3 mt-10 rounded-xl border">
+                                <div className="text-right  p-3 mt-10 rounded-xl border bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
-                                    <form action="/home" className="w-full max-w-sm ml-auto">
+                                    <form action="/home" className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
                                             <div className="w-1/2">
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name"> Name </label>

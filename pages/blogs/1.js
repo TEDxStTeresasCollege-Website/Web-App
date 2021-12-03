@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import Background from '../../components/Background';
 
 
 const one = () => {
@@ -15,7 +14,6 @@ const one = () => {
 
             <Navbar />
 
-            <Background />
 
             <div className="container">
                 <div className="row">

@@ -24,7 +24,11 @@ module.exports = {
         'water': '#0889ab',
         'water-dark': '#0889ab',
         'ted-red': '#e9280b'
-      }
+      },
+      backgroundImage: {
+        'night-sky': "url('/web/bg.png')",
+        'footer': "url('/web/footer.png')"
+       }
     },
   },
   variants: {
