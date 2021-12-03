@@ -35,6 +35,7 @@ const Team = () => {
                         <Button text="Teachers-in-charge" />
                     </div>
                    
+                    
                 </div>
                 {/* <div className="p-10 grid sm:grid-cols-1 lg:grid-cols-4 gap-5 w-3/4 mx-auto text-white sans">
                     <table className='table-auto'>
