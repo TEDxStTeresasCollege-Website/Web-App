@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Button from '../components/CategoryButton'
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import teamDetails from '../data/teamDetails.js'
 
 const Team = () => {
 
@@ -34,12 +34,7 @@ const Team = () => {
                         <Button text="Operations Crew" />
                         <Button text="Teachers-in-charge" />
                     </div>
-
-                    <h3 className="text-sm md:text-lg text-center ">Team work undoubtedly makes the dream work and we have no better example of this than our own crew of volunteers! During this year, 95 people decided to come together under the common banner of TEDxStTeresasCollege to spread ideas they believe are worth sharing. Today, these 95 people are volunteers who are proud and ready to host their very first TEDx event!</h3>
-                    {/* <Background /> */}
-                    <div>
-                        <Image src="/team.jpg" alt="Team" width={4000} height={1800} />
-                    </div>
+                   
                 </div>
                 {/* <div className="p-10 grid sm:grid-cols-1 lg:grid-cols-4 gap-5 w-3/4 mx-auto text-white sans">
                     <table className='table-auto'>

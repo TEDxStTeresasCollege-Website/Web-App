@@ -5,7 +5,7 @@ const Navbar = ({ hide }) => {
 
     return (
         <>
-            <nav className="absolute top-0 flex items-center w-full z-10 text-sm bg-black px-2 md:px-5 lg:px-20">
+            <nav className="absolute top-0 flex items-center w-full z-10 text-sm bg-black px-2 md:px-5 lg:px-10">
 
                 <div className="flex-1 p-5">
                     <Link href="/"><img className='w-60' src="/tedXSTClogo.png"/></Link>
@@ -16,7 +16,7 @@ const Navbar = ({ hide }) => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="{2}" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-                    <ul className="link-container dropdown-menu hidden mr-2 md:mr-5 lg:mr-20">
+                    <ul className="link-container dropdown-menu hidden mr-2 md:mr-5 lg:mr-10">
                         <Link href="/"><a className="rounded-t navbar-link border border-gray-700">Home</a></Link>
                         <Link href="/about"><a className="navbar-link border border-gray-700 border-t-0">About TED/TEDx</a></Link>
                         {/* <Link href="/about"><a className="navbar-link border border-gray-700 border-t-0">TEDxStTeresasCollege</a></Link> */}
