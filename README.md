@@ -1,4 +1,4 @@
-# Backend-DB
+# Complete Web-App with BACKEND AND FRONTEND
 This repository contains everything related to TEDxStTeresa's website’s backend & DB 
 
 ## Things to know before getting started
