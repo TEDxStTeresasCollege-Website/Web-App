@@ -7,8 +7,10 @@ const Footer = () => {
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black">
 
             <div className="relative top-0 w-full h-full">
-                <img className="absolute object-contain w-full block lg:hidden" src="/mobile/footer.png"></img>
-                <img className="absolute object-contain hidden lg:block" src="/web/footer.png"></img>
+                <div className="bottom-0 w-full absolute object-contain">
+                    <img className="block lg:hidden" src="/mobile/footer.png"></img>
+                    <img className="hidden lg:block" src="/web/footer.png"></img>
+                </div>
                 <div className="relative w-full h-full top-0 z-50">
                     <div className="relative top-20 lg:top-0 w-full p-10 pt-16">
                         <div className="flex flex-row">
@@ -85,9 +87,9 @@ const Footer = () => {
                         </div>
 
                         <div className="relative pt-10 w-full text-center">
-                            This independent event is operated under license from TED<br />
-                            Website Created by <br />
-                            <a className='hover:underline' href="">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a>
+                            <div>This independent event is operated under license from TED</div>
+                            <div className="text-2xl">. . . . . . . . . . . . . . . . . .</div>
+                            <div className="pt-3">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
 
