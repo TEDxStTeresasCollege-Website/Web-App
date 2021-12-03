@@ -1,5 +1,5 @@
 # Complete Web-App with BACKEND AND FRONTEND
-This repository contains everything related to TEDxStTeresa's website’s backend & DB 
+This repository contains everything related to TEDxStTeresa's web application
 
 ## Things to know before getting started
 My job will be to ensure you are understanding everything that I will be setting up for the website on my end, i.e Setting up,maintaining, and troubleshooting the cloud machine(hosting), SMTP server(mailing list), domain, SSL certificates, DB, and APIs.
