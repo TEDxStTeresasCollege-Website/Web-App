@@ -23,18 +23,18 @@ const Cochym = () => {
                 <div className="w-1/2 mx-auto mt-20">
                     <form className="">
                         <div className="grid grid-cols-2 gap-5 justify-center">
-                            <label>First Name :</label>
-                            <input></input>
-                            <label>Last Name :</label>
-                            <input></input>
-                            <label>Mobile Number :</label>
-                            <input></input>
-                            <label>Email ID :</label>
-                            <input></input>
-                            <label>Designation :</label>
-                            <input></input>
-                            <label>Institution Name :</label>
-                            <input></input>
+                            <label className="text-xl md:text-2xl">First Name :</label>
+                            <input className="rounded-sm"></input>
+                            <label className="text-xl md:text-2xl">Last Name :</label>
+                            <input className="rounded-sm"></input>
+                            <label className="text-xl md:text-2xl">Mobile Number :</label>
+                            <input className="rounded-sm"></input>
+                            <label className="text-xl md:text-2xl">Email ID :</label>
+                            <input className="rounded-sm"></input>
+                            <label className="text-xl md:text-2xl">Designation :</label>
+                            <input className="rounded-sm"></input>
+                            <label className="text-xl md:text-2xl">Institution Name :</label>
+                            <input className="rounded-sm"></input>
                         </div>
                         <div className="mt-10 flex justify-center">
                             <input type="submit" value="Submit" className="bg-ted-red text-white font-bold py-2 px-4 rounded w-1/3"></input>
