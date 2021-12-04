@@ -6,8 +6,17 @@ import Footer from '../components/Footer'
 import homeSlider from '../data/homeSlider'
 import Link from 'next/link'
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect  } from 'react';
 
 export default function Home() {
+
+  useEffect (() => {
+    // INITIALIZE AOS
+    AOS.init();
+  }, [])
+
   return (
     <div>
       <Head>
@@ -31,7 +40,7 @@ export default function Home() {
       <div className='bg-night-sky bg-repeat-y bg-black'>
         <section id="vision" className="w-full h-full lg:min-h-screen text-white bg-night-sky-web">
           <div className="flex flex-col justify-center items-center text-justify lg:text-center sans mx-auto h-full lg:min-h-screen py-20 lg:py-0 w-full md:w-3/4 px-10 lg:px-20">
-            <h1 className="font-bold text-2xl md:text-4xl pb-10 text-ted-red serif">Our Vision</h1>
+            <h1 data-aos="fade-up" className="font-bold text-2xl md:text-4xl pb-10 text-ted-red serif">Our Vision</h1>
             <h3 className="text-sm md:text-xl pb-5">When the Teresian spirit meets TED's ethos, mind blowing ideas erupt. </h3>
             <h3 className="text-sm md:text-xl">TEDxStTeresasCollege seeks to ignite enlightening conversations and draw curious minds to our stage to see the world around us in a different light. We visualize a generation that spearheads groundbreaking, innovative changes in society through the values they take away from our events. Our aim is to be the confluence of ideals and values that are catalysts for spreading noteworthy ideas.</h3>
           </div>
@@ -70,7 +79,7 @@ export default function Home() {
 
         <section id="camera-roll" className="w-full h-full lg:min-h-screen">
           <div className="flex flex-col gap-5 items-center justify-center font-sans text-black h-full lg:min-h-screen mx-auto w-full p-2 md:w-1/2">
-            <h1 className="text-2xl md:text-4xl mb-5 text-ted-red serif">Camera Roll</h1>
+            <h1 data-aos="fade-up" className="text-2xl md:text-4xl mb-5 text-ted-red serif">Camera Roll</h1>
             <Slide images={homeSlider} />
           </div>
         </section>

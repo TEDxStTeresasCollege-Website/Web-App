@@ -6,21 +6,21 @@ import BlogCard from '../../components/BlogCard';
 const Blogs = () => {
     const data = [
         {
-            title: "Blog post 1",
-            content: "content",
-            url: "#",
-            imagesrc: "https://picsum.photos/400/200"
+            title: "Post 1",
+            content: "This is the content for the post 1.This is an extra line to the blog post.",
+            url: "/blogs/1",
+            imagesrc: "/team.jpg"
         },
         {
             title: "Blog post 2",
             content: "content 2",
-            url: "#",
+            url: "/blogs/2",
             imagesrc: "https://picsum.photos/400/200"
         },
         {
             title: "Blog post 3",
             content: "content 3",
-            url: "#",
+            url: "/blogs/3",
             imagesrc: "https://picsum.photos/400/200"
         },
     ]
@@ -50,7 +50,6 @@ const Blogs = () => {
                         })}
                     </div>
                 </div>
-
             </div>
 
             <Footer />
