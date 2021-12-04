@@ -22,15 +22,14 @@ const Footer = () => {
         console.log(name, email, organisation)
     }
     return (
-        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black">
-
-            <div className="relative top-0 w-full h-full">
-                <div className="bottom-0 w-full absolute object-contain">
-                    <img className="block lg:hidden" src="/mobile/footer.png"></img>
-                    <img className="hidden lg:block" src="/web/footer.png"></img>
-                </div>
-                <div className="relative w-full h-full top-0 z-50">
-                    <div className="relative top-20 lg:top-0 w-full p-10 pt-16">
+        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
+            <div className="w-full absolute object-cover bottom-0">
+                <img className="block sm:hidden" src="/mobile/footer.png"></img>
+                <img className="hidden sm:block" src="/web/footer.png"></img>
+            </div>
+            <div className="relative w-full h-full block">
+                <div className="w-full h-full z-50">
+                    <div className="top-20 w-full p-10 pt-16">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
@@ -66,7 +65,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="text-right float-right">
-                                <div className="text-right  p-3 mt-10 rounded-xl border bg-gray-800">
+                                <div className="text-right  p-3 mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
                                     <form action="/home" className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
@@ -104,7 +103,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="relative pt-10 w-full text-center">
+                        <div className="pt-10 w-full text-center">
                             <div>This independent event is operated under license from TED</div>
                             <div className="text-2xl">. . . . . . . . . . . . . . . . . .</div>
                             <div className="pt-3">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>

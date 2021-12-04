@@ -14,9 +14,11 @@ const Cochym = () => {
 
             <Navbar />
 
-            <div className="min-h-screen bg-repeat-y bg-black text-white pt-56">
-                <h1 className="text-center text-2xl lg:text-4xl text-ted-red serif">Pre-Event Registration Form</h1>
-                {/* <div className="w-3/4 h-10"><Image className="" src="/cochymLogo.png" layout="fill"></Image></div> */}
+            <div className="min-h-screen bg-night-sky bg-repeat-y bg-black text-white pt-56 flex flex-col justify-center items-center">
+                <h1 className="text-center text-2xl lg:text-4xl text-ted-red serif block mb-20">Pre-Event Registration Form</h1>
+                <div className="">
+                    <Image className="" src="/cochymLogo.png" width="700" height="250" layout="intrinsic"></Image>
+                </div>
 
                 <div className="w-1/2 mx-auto mt-20">
                     <form className="">
@@ -33,7 +35,9 @@ const Cochym = () => {
                             <input></input>
                             <label>Institution Name :</label>
                             <input></input>
-                            <input type="submit" value="Submit" className="bg-ted-red text-white font-bold py-2 px-4 rounded"></input>
+                        </div>
+                        <div className="mt-10 flex justify-center">
+                            <input type="submit" value="Submit" className="bg-ted-red text-white font-bold py-2 px-4 rounded w-1/3"></input>
                         </div>
                     </form>
                 </div>
