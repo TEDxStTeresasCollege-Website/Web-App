@@ -1,14 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
-state = {
-    name: ``,
-    email: ``,
-    organisation: ``
-};
+import { useState } from "react";
 
 const Footer = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [organisation, setOrganisation] = useState('')
+    function handleChangeName(e) {
+        setName(e.target.value)
+        console.log(name, e.target.value)
+    }
+    function handleChangeEmail(e) {
+        setEmail(e.target.value)
+    }
+    function handleChangeOrganisation(e) {
+        setOrganisation(e.target.value)
+    }
+    function handleSubmit(e) {
+        e.preventDefault()
+        console.log(name, email, organisation)
+    }
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black">
 
@@ -62,7 +74,7 @@ const Footer = () => {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name"> Name </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="Your Name" onChange={this.handleChange} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" />
+                                                <input placeholder="Your Name" onChange={handleChangeName} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" />
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -70,7 +82,7 @@ const Footer = () => {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Email </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="example@email.com" onChange={this.handleChange} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-email" type="email" />
+                                                <input placeholder="example@email.com" onChange={handleChangeEmail} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-email" type="email" />
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -78,13 +90,13 @@ const Footer = () => {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Organisation </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="Your Organisation" onChange={this.handleChange} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-organisation" type="text" />
+                                                <input placeholder="Your Organisation" onChange={handleChangeOrganisation} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-organisation" type="text" />
                                             </div>
                                         </div>
                                         <div className="flex items-center">
                                             <div className="w-1/2"></div>
                                             <div className="w-1/2">
-                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="button" value="Subscribe" />
+                                                <input onClick={handleSubmit} className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="button" value="Subscribe" />
                                             </div>
                                         </div>
                                     </form>
