@@ -21,6 +21,7 @@ const Footer = () => {
         e.preventDefault()
         console.log(name, email, organisation)
     }
+    
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <div className="w-full absolute object-cover bottom-0">
