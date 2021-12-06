@@ -20,8 +20,6 @@ export default function Cochym() {
 
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm() 
-  
-  
    async function onSubmit(values) {
     let config = {
       method: `POST`,
@@ -103,11 +101,11 @@ export default function Cochym() {
                     </span>
                     <span></span>
 
-                    <label className="text-xl md:text-2xl">Mobile Number :</label>
+                    <label className="text-xl md:text-2xl">Mobile Number (+91) :</label>
                     <input name="mobile"
-                    {...register("mobile", {required: { value: true, message:"Mobile Number is required" },  
-                    maxLength:{value:12, message:"Valid Mobile Number Required"}, 
-                    minLength:{ value:8, message:"Valid Mobile Number Required"}
+                    {...register("mobile", {required: { value: true, message:"Mobile Number is required" },
+                    valueAsNumber: true,  
+                    pattern: {value:"/^[0-9]{10}$/", message:"Valid Mobile Number Required" },
                     })}
                     type="mobile" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
