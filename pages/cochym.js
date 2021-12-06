@@ -70,7 +70,7 @@ export default function Cochym() {
 
     <Navbar />
 
-    <div className="min-h-screen bg-night-sky bg-repeat-y bg-black text-white pt-40 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-night-sky bg-repeat-y bg-black text-white pt-40 flex flex-col justify-center items-center sans">
         <h1 className="text-center text-2xl lg:text-4xl text-ted-red serif block mb-20">Pre-Event Registration Form</h1>
         <div className="">
             <Image className="" src="/cochymLogo.png" width="700" height="250" layout="intrinsic"></Image>
@@ -85,7 +85,7 @@ export default function Cochym() {
                       maxLength:{value:50, message:"Name is too long."}, 
                       minLength:{ value:2, message:"Name is too short."}
                     })}
-                    type="firstname"  className="rounded-sm"></input>
+                    type="firstname"  className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
                     {errors?.firstName?.message}
                     </span>
@@ -97,7 +97,7 @@ export default function Cochym() {
                       maxLength:{value:50, message:"Last Name too long."}, 
                       minLength:{ value:2, message:"Last Name too short."}
                     })}
-                    type="lastname" className="rounded-sm"></input>
+                    type="lastname" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
                     {errors.lastName?.message}
                     </span>
@@ -109,7 +109,7 @@ export default function Cochym() {
                     maxLength:{value:12, message:"Valid Mobile Number Required"}, 
                     minLength:{ value:8, message:"Valid Mobile Number Required"}
                     })}
-                    type="mobile" className="rounded-sm"></input>
+                    type="mobile" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
                     {errors.mobile?.message}
                     </span>
@@ -121,7 +121,7 @@ export default function Cochym() {
                       maxLength:{value:120, message:"You exceeded the maximum limit."}, 
                       minLength:{ value:8, message:"Too short to be an Email ID"}
                     })}
-                    type="emailID"  className="rounded-sm"></input>
+                    type="emailID"  className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
                     {errors?.emailID?.message}
                     </span>
@@ -133,7 +133,7 @@ export default function Cochym() {
                       maxLength:{value:50, message:"Designation is too long."}, 
                       minLength:{ value:5, message:"Designation is too short."}
                     })}
-                    type="designation" className="rounded-sm"></input>
+                    type="designation" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'> 
                     {errors?.designation?.message}
                     </span>
@@ -145,7 +145,7 @@ export default function Cochym() {
                       maxLength:{value:50, message:"Name is too long."}, 
                       minLength:{ value:1, message:"Name is too short."}
                     })}
-                    type="institution" className="rounded-sm"></input>
+                    type="institution" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
                     {errors?.institution?.message}
                     </span>
