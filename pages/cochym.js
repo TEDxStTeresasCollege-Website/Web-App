@@ -25,7 +25,7 @@ export default function Cochym() {
    async function onSubmit(values) {
     let config = {
       method: `POST`,
-      url: `http://localhost:3000/api/data/pre_event`,
+      url: `http://localhost:3000/api/data/newsletter`,
       headers: {
         'Content-Type': 'application/json'
       },
