@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="relative w-full h-full block">
                 <div className="w-full h-full z-50">
-                    <div className="top-20 w-full px-10 pb-0 pt-16">
+                    <div className="top-20 w-full px-2 md:px-10 md:pb-0 md:pt-16">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
@@ -59,14 +59,14 @@ const Footer = () => {
                         <div className="flex flex-row">
                             <div className="text-left my-10 py-3 flex-1">
                                 Say Hello!
-                                <div className="flex justify-start gap-3 mt-3">
+                                <div className="flex justify-start gap-2 pr-4 md:gap-3 mt-3">
                                     <a href="https://instagram.com/tedxst_teresascollege"><span><FontAwesomeIcon icon={faInstagram} className="text-blue-400" size="2x" /></span></a>
                                     <a href="https://www.facebook.com/Tedxstteresascollege-102464092186247/"><span><FontAwesomeIcon icon={faFacebook} className="text-blue-400 ml-2" size="2x" /></span></a>
                                     <a href="https://www.linkedin.com/company/tedxstteresascollege"><span><FontAwesomeIcon icon={faLinkedin} className="text-blue-400 ml-2" size="2x" /></span></a>
                                 </div>
                             </div>
                             <div className="text-right float-right">
-                                <div className="text-right  p-3 mt-10 rounded-xl border lg:bg-gray-800">
+                                <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
                                     <form action="/home" className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
@@ -106,7 +106,7 @@ const Footer = () => {
 
                         <div className="pt-10 w-full text-center">
                             <div>This independent event is operated under the license from TED</div>
-                            <div className="text-xl">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
+                            <div className="md:text-xl">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
                             <div className="pt-px">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
