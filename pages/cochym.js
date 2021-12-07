@@ -7,7 +7,8 @@ import Image from "next/image"
 import { useForm } from "react-hook-form";
 import { triggerFocus } from 'antd/lib/input/Input';
 import axios from 'axios';
-
+import { useRouter } from 'next/dist/client/router';
+import { route } from 'next/dist/server/router';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -18,7 +19,7 @@ const stripePromise = loadStripe(
 
 export default function Cochym() {
 
-
+  const router = useRouter();
   const { register, handleSubmit, watch, formState: { errors } } = useForm() 
    async function onSubmit(values) {
     let config = {
@@ -30,9 +31,10 @@ export default function Cochym() {
       data: values,
     };
     try{
-      const response = await axios(config);
-      if(response.data.status == 200){
-        console.log('Success');
+      const response = await axios(config)
+      if(response.status == 200){
+        console.log('Hello');
+        router.push('/circles')
       }
     }catch {
       console.error();
@@ -53,9 +55,6 @@ export default function Cochym() {
   }, []);
 
   
-
- 
-
   return (
     
     <>
@@ -104,8 +103,9 @@ export default function Cochym() {
                     <label className="text-xl md:text-2xl">Mobile Number (+91) :</label>
                     <input name="mobile"
                     {...register("mobile", {required: { value: true, message:"Mobile Number is required" },
-                    valueAsNumber: true,  
-                    pattern: {value:"/^[0-9]{10}$/", message:"Valid Mobile Number Required" },
+                    valueAsNumber: true,
+                    min: {value:10, message: "Too short to be a valid number"}, 
+                    pattern: {value:/^[0-9]{10}$/, message:"Valid Mobile Number Required" },
                     })}
                     type="mobile" className="rounded-sm text-gray-900 px-4"></input>
                     <span className='text-red-400 text-sm py-2'>
