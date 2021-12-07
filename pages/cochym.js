@@ -4,11 +4,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
-import { useForm } from "react-hook-form";
-import { triggerFocus } from "antd/lib/input/Input";
-import axios from "axios";
 
-import PersonalDetailsForm from "../components/cochym/PersonalDetailsForm";
+import NewsLetterForm from "../components/cochym/NewsletterForm";
 import PrivateDetailsForm from "../components/cochym/PrivateDetailsForm";
 import PaymentForm from "../components/cochym/PaymentForm";
 
@@ -22,7 +19,7 @@ export default function Cochym() {
   const [pageNumber, setPageNumber] = useState(1);
 
   const gotoNextPage = (pageNumber) => {
-    setPageNumber(pageNumber + 1);
+    setPageNumber(pageNumber);
   };
 
   return (
@@ -51,16 +48,16 @@ export default function Cochym() {
 
         <div className="mx-auto mt-50">
           {pageNumber === 1 && (
-            <PersonalDetailsForm gotoNextPage={() => gotoNextPage(2)} />
+            <NewsLetterForm gotoNextPage={() => gotoNextPage(2)} />
           )}
           {pageNumber === 2 && (
-            <PrivatetailsForm gotoNextPage={() => gotoNextPage(3)} />
+            <PrivateDetailsForm gotoNextPage={() => gotoNextPage(3)} />
           )}
           {pageNumber === 3 && (
             <PaymentForm gotoNextPage={() => gotoNextPage(4)} />
           )}
           {pageNumber > 3 && (
-            <p>rder placed! You will receive an email confirmation.</p>
+            <p>Order placed! You will receive an email confirmation.</p>
           )}
         </div>
       </div>

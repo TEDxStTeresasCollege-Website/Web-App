@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-const PersonalDetailsForm = () => {
+const NewsLetterForm = ({ gotoNextPage }) => {
   const {
     register,
     handleSubmit,
@@ -13,13 +13,8 @@ const PersonalDetailsForm = () => {
 
   const onSubmit = async (values) => {
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/data/newsletter",
-        values
-      );
-      if (response.status == 200) {
-        router.push("/circles");
-      }
+      // await axios.post("http://localhost:3000/api/data/newsletter", values);
+      gotoNextPage();
     } catch (error) {
       console.error(error);
     }
@@ -149,14 +144,15 @@ const PersonalDetailsForm = () => {
         <span></span>
       </div>
       <div className="flex justify-center mt-10">
-        <input
+        <button
           type="submit"
-          value="Submit"
           className="w-1/3 px-4 py-2 font-bold text-white rounded bg-ted-red"
-        ></input>
+        >
+          Next
+        </button>
       </div>
     </form>
   );
 };
 
-export default PersonalDetailsForm;
+export default NewsLetterForm;
