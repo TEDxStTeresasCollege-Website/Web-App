@@ -53,12 +53,7 @@ export default function Cochym() {
           {pageNumber === 2 && (
             <PrivateDetailsForm gotoNextPage={() => gotoNextPage(3)} />
           )}
-          {pageNumber === 3 && (
-            <PaymentForm gotoNextPage={() => gotoNextPage(4)} />
-          )}
-          {pageNumber > 3 && (
-            <p>Order placed! You will receive an email confirmation.</p>
-          )}
+          {pageNumber === 3 && <PaymentForm />}
         </div>
       </div>
 
