@@ -21,7 +21,7 @@ const Footer = () => {
         e.preventDefault()
         console.log(name, email, organisation)
     }
-    
+
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <div className="w-full absolute object-cover bottom-0">
@@ -30,11 +30,11 @@ const Footer = () => {
             </div>
             <div className="relative w-full h-full block">
                 <div className="w-full h-full z-50">
-                    <div className="top-20 w-full p-10 pt-16">
+                    <div className="top-20 w-full px-10 pb-0 pt-16">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
-                                <div className="text-blue-400"><a href="">tedxstteresascollege@gmail.com</a></div>
+                                <div className="text-blue-400"><a href="">teresas@tedxstteresascollege.in</a></div>
                                 <div className="py-2 md:mr-5">
                                     <div className="hover:underline">Organizer</div>
                                     Sneha Anna George<br />
@@ -105,9 +105,9 @@ const Footer = () => {
                         </div>
 
                         <div className="pt-10 w-full text-center">
-                            <div>This independent event is operated under license from TED</div>
-                            <div className="text-2xl">. . . . . . . . . . . . . . . . . .</div>
-                            <div className="pt-3">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
+                            <div>This independent event is operated under the license from TED</div>
+                            <div className="text-xl">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
+                            <div className="pt-px">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
 
@@ -125,6 +125,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-
-

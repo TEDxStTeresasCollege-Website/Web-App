@@ -11,13 +11,13 @@ import React, { useState } from 'react'
 const Team = () => {
     const [state, setState] = useState(0)
     const list = []
-    const length = teamDetails[0].name.length
+    const length = teamDetails[1].name.length
 
     for (var i = 0; i < length; i++) {
         list.push(
             <tr className="hover:bg-gray-900">
-                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[0].name[i]}</td>
-                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[0].designation[i]}</td>
+                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[1].name[i]}</td>
+                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[1].designation[i]}</td>
             </tr>
         )
     }
@@ -48,10 +48,9 @@ const Team = () => {
                         <Button text="Sponsorship Team" click={() => setState(7)} />
                         <Button text="Technical Team" click={() => setState(8)} />
                         <Button text="Operations Crew" click={() => setState(9)} />
-                        <Button text="Teachers-in-charge" click={() => setState(10)} />
                     </div>
                 </div>
-                {(state == 0) ?
+                {(state == 1) ?
                     <div className="p-10 grid grid-col-2 gap-5 w-3/4 mx-auto text-white sans">
                         <table className='table-auto text-left rounded my-6'>
                             <thead>
@@ -67,8 +66,8 @@ const Team = () => {
                         <Image src={teamDetails[0].image} width="4000" height="1800"></Image>
                     </div> :
                     <div className="w-3/4 mx-auto">
-                        <p className="text-white text-center">{teamDetails[state].content}</p>
-                        <Image src={teamDetails[state].image} width="4000" height="1800"></Image>
+                        <p className="text-white text-lg text-center pb-5">{teamDetails[state].content}</p>
+                        <Image src={teamDetails[state].image} width="1000" height="648"></Image>
                     </div>}
             </div>
 
