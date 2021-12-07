@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 const PaymentForm = () => {
@@ -36,12 +37,14 @@ const PaymentForm = () => {
         <p className="text-lg">
           Order placed! You will receive an email confirmation.
         </p>
-        <button
-          type="submit"
+        <Link
+          href="/"
           className="px-4 py-2 font-bold text-white rounded bg-ted-red"
         >
-          Go back home
-        </button>
+          <button className="px-4 py-2 font-bold text-white rounded bg-ted-red">
+            Go back home
+          </button>
+        </Link>
       </div>
     );
   }
@@ -51,12 +54,11 @@ const PaymentForm = () => {
       <p className="text-lg">
         Uh oh! Something went wrong. Please try again later!
       </p>
-      <button
-        type="submit"
-        className="px-4 py-2 font-bold text-white rounded bg-ted-red"
-      >
-        Go back home
-      </button>
+      <Link href="/">
+        <button className="px-4 py-2 font-bold text-white rounded bg-ted-red">
+          Go back home
+        </button>
+      </Link>
     </div>
   );
 };
