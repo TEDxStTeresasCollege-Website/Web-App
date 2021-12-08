@@ -5,8 +5,7 @@ const TeamDetails = [
      }, {
          name : ["Sneha Ann George", "Marianne Joseph"],
          designation: ["Organizer", "Co-organizer"],
-         content:"The core team here at TEDxStTeresasCollege is made up of a diverse bunch of young, energetic women ready to take the world by storm!Presenting the Core Team: A group of people who’re equally passionate to lead as they are about TEDx. They have the skills and the bandwidth to fulfill their roles as Team Heads because team management is a crucial task when working with an energetic group of volunteers!",
-         image: "/core.jpg"
+         image: ["/coreTeam/sneha.jpg", "/coreTeam/marianne.jpg"],
       }, {
           content: "It's the era of social media and quality content is a game-changer. With pens stuck behind their ears and imaginations running wild,we present to you the curious minds who work to change your perspective towards ideas you never gave a second thought about. Here's our very own Content Curation Team!",
           image: "/content.jpg"

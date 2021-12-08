@@ -5,22 +5,11 @@ import Footer from '../components/Footer'
 import teamDetails from '../data/teamDetails.js'
 import Image from 'next/image'
 import React, { useState } from 'react'
-
+import TD from '../components/TeamDetails'
 
 
 const Team = () => {
     const [state, setState] = useState(0)
-    const list = []
-    const length = teamDetails[1].name.length
-
-    for (var i = 0; i < length; i++) {
-        list.push(
-            <tr className="hover:bg-gray-900">
-                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[1].name[i]}</td>
-                <td className="py-4 px-6 border-b border-grey-light">{teamDetails[1].designation[i]}</td>
-            </tr>
-        )
-    }
 
     return (
         <>
@@ -31,6 +20,8 @@ const Team = () => {
             </Head>
 
             <Navbar />
+
+            <TD content="Hello" url="/team.jpg" />
 
             <div className="min-h-screen bg-night-sky bg-repeat-y bg-black">
                 <div className="flex flex-col gap-5 items-center text-center justify-center font-sans text-white mx-auto w-3/4 pt-52">
@@ -52,22 +43,11 @@ const Team = () => {
                 </div>
                 {(state == 1) ?
                     <div className="p-10 grid grid-col-2 gap-5 w-3/4 mx-auto text-white sans">
-                        <table className='table-auto text-left rounded my-6'>
-                            <thead>
-                                <tr>
-                                    <th className="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border border-grey-300">Name</th>
-                                    <th className="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border border-l-0 border-grey-300">Designation</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {list}
-                            </tbody>
-                        </table>
-                        <Image src={teamDetails[0].image} width="4000" height="1800"></Image>
+                        
                     </div> :
                     <div className="w-3/4 mx-auto">
                         <p className="text-white text-lg text-center pb-5">{teamDetails[state].content}</p>
-                        <Image src={teamDetails[state].image} width="1000" height="648"></Image>
+                        <Image src={teamDetails[state].image} width="4000" height="1800"></Image>
                     </div>}
             </div>
 

@@ -9,6 +9,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect  } from 'react';
+import popUp from '../components/popUp'
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
 
       <Navbar />
 
+      <popUp />
 
       <section id="home" className="w-full h-screen relative text-white serif">
         <div className="absolute -z-10 bg-black w-full h-full"></div>
