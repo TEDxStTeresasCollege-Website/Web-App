@@ -13,7 +13,7 @@ const NewsLetterForm = ({ gotoNextPage }) => {
 
   const onSubmit = async (values) => {
     try {
-      // await axios.post("http://localhost:3000/api/data/newsletter", values);
+      await axios.post("http://localhost:3000/api/data/pre_event", values);
       gotoNextPage();
     } catch (error) {
       console.error(error);
@@ -23,10 +23,7 @@ const NewsLetterForm = ({ gotoNextPage }) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      action="/api/checkout/session"
-      method="POST"
-      className="p-6 m-2 bg-gray-800 rounded-lg bg-opacity-60"
-    >
+      className="p-6 m-2 bg-gray-800 rounded-lg bg-opacity-60">
       <div className="grid justify-center grid-cols-2 gap-5">
         <label className="text-xl md:text-2xl">First Name :</label>
         <input
@@ -101,8 +98,7 @@ const NewsLetterForm = ({ gotoNextPage }) => {
             },
           })}
           type="emailID"
-          className="px-4 text-gray-900 rounded-sm"
-        ></input>
+          className="px-4 text-gray-900 rounded-sm"></input>
         <span className="py-2 text-sm text-red-400">
           {errors?.emailID?.message}
         </span>
