@@ -9,43 +9,34 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Footer() {
     const { register, handleSubmit, formState: { errors }, } = useForm();
-    const success = () => toast.success('Voila! You have successfully subscribed our newsletter.', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
-    const error = () => toast.error('Oops! Something went wrong!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
     const onSubmit = async (values) => {
         try {
             const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
             if (response.status == 200) {
-                success();
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                />
+                toast.success('Voila! You have successfully subscribed our newsletter.', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             }
         } catch (error) {
-            error();
+            toast.error('Oops! Something went wrong!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+    };
+    return (
+        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
@@ -57,10 +48,6 @@ export default function Footer() {
                 draggable
                 pauseOnHover
             />
-        }
-    };
-    return (
-        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <div className="w-full absolute object-cover bottom-0">
                 <img className="block sm:hidden" src="/mobile/footer.png"></img>
                 <img className="hidden sm:block" src="/web/footer.png"></img>
