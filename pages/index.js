@@ -10,13 +10,12 @@ import 'aos/dist/aos.css';
 import { useEffect  } from 'react';
 import { useRouter } from 'next/router'
 import { route } from 'next/dist/server/router'
-import { useEffect } from 'react';
 import Clouds from "../components/Clouds"
 import PopUp from "../components/popUp"
 
 export default function Home() {
   const router = useRouter;
-  const { session_id } = router.query; 
+  // const { session_id } = router.query; 
 
   useEffect(() => {
     // INITIALIZE AOS
