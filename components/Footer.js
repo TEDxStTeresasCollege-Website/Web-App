@@ -18,7 +18,15 @@ export default function Footer() {
         draggable: true,
         progress: undefined,
     });
-    const error = () => toast("Wow so easy!");
+    const error = () => toast.error('Oops! Something went wrong!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
     const onSubmit = async (values) => {
         try {
             const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
@@ -37,16 +45,7 @@ export default function Footer() {
                 />
             }
         } catch (error) {
-            // toast.error('Oops! Something went wrong!', {
-            //     position: "top-right",
-            //     autoClose: 5000,
-            //     hideProgressBar: false,
-            //     closeOnClick: true,
-            //     pauseOnHover: true,
-            //     draggable: true,
-            //     progress: undefined,
-            // });
-            success();
+            error();
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
