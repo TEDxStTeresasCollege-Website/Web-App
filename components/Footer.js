@@ -19,7 +19,7 @@ export default function Footer() {
       };
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black">
-            <div className="w-full absolute object-cover top-0">
+            <div className="w-full absolute object-cover bottom-0">
                 <img className="block sm:hidden" src="/mobile/footer.png"></img>
                 <img className="hidden sm:block" src="/web/footer.png"></img>
             </div>
@@ -156,8 +156,8 @@ export default function Footer() {
 
                         <div className="pt-10 w-full text-center">
                             <div>This independent event is operated under the license from TED</div>
-                            <div className="md:text-lg font-bold -my-10">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
-                            <div className="">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
+                            <div className="md:text-lg font-bold -my-1">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
+                            <div className="pb-5">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
 
