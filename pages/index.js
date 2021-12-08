@@ -51,8 +51,8 @@ export default function Home() {
             <div className=" bg-gray-800 p-6 rounded-lg m-2 bg-opacity-60">
               <h2 className="text-2xl font-bold mb-2 serif">Up Next ...</h2>
               <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-sm">Cochym Pre-Event</p>
+                <a href="/cochym" className="text-sm hover:underline text-blue-400">Read More</a>
               </div>
               <div className="pt-4">
                 <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
@@ -86,7 +86,7 @@ export default function Home() {
 
         <section id="whatIsTedX" className="w-full h-full lg:min-h-screen py-20 lg:py-0">
           <div className="flex flex-col gap-5 items-center justify-center text-center h-full lg:min-h-screen font-sans text-white mx-auto w-3/4">
-            <h1 className="text-2xl md:text-4xl text-ted-red serif">What is TEDx?</h1>
+            <h1 data-aos="fade-up" className="text-2xl md:text-4xl text-ted-red serif">What is TEDx?</h1>
             <h3 className="text-sm md:text-lg">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxStTeresasCollege, where x = independently organized TED event. At our TEDxStTeresasCollege event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</h3>
             <Link href='/about'>
               <button className="bg-gray-500 hover:bg-gray-700 text-white py-2 px-4 rounded text-sm">
