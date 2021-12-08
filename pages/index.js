@@ -8,11 +8,11 @@ import Link from 'next/link'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect  } from 'react';
+import { useEffect } from 'react';
 
 export default function Home() {
 
-  useEffect (() => {
+  useEffect(() => {
     // INITIALIZE AOS
     AOS.init();
   }, [])
@@ -48,30 +48,19 @@ export default function Home() {
 
         <section id="about" className="w-full h-full relative text-white sans bg-night-sky-web">
           <div className="flex flex-wrap md:gap-20 justify-center items-center w-5/6 md:w-2/3 h-full mx-auto text-center text-gray-100 py-20">
-            <div className=" bg-gray-800 p-6 rounded-lg m-2 bg-opacity-60">
+            <div className=" bg-gray-800 rounded-lg m-2 bg-opacity-60 flex justify-center items-center flex-col h-full p-20">
               <h2 className="text-2xl font-bold mb-2 serif">Up Next ...</h2>
               <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
-              </div>
-              <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-xl text-ted-red">Cochym</p>
+                <a href="/cochym" className="text-sm hover:underline text-blue-400">Read More</a>
               </div>
             </div>
-            <div className="bg-gray-800 p-6 rounded-lg m-2 bg-opacity-60">
+            <div className="bg-gray-800 p-6 rounded-lg m-2 bg-opacity-60 py-16">
               <h2 className="text-2xl font-bold mb-2 serif">Featured Blog Posts</h2>
               <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
-              </div>
-              <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
-              </div>
-              <div className="pt-4">
-                <p className="text-sm">Lorem ipsum dolor sit amet, consectetuer adipisci</p>
-                <a href="#" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-lg">The Journey from a Vision to its Existence</p>
+                <p className="text-md">- By Neha Cherian</p>
+                <a href="/blogs/1" className="text-sm hover:underline text-blue-400">Read More</a>
               </div>
             </div>
           </div>
