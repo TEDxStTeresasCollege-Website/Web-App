@@ -19,8 +19,6 @@ const Team = () => {
 
             <Navbar />
 
-            <TD content="Hello" url="/team.jpg" />
-
             <div className="min-h-screen bg-night-sky bg-repeat-y bg-black">
                 <div className="flex flex-col gap-5 items-center text-center justify-center font-sans text-white mx-auto w-3/4 pt-52">
                     <h1 className="text-2xl md:text-4xl text-ted-red serif">Team</h1>
