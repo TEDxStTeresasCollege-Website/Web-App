@@ -5,9 +5,23 @@ import Footer from '../components/Footer'
 import teamDetails from '../data/teamDetails.js'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import TeamCard from '../components/TeamCard'
 
 const Team = () => {
     const [state, setState] = useState(0)
+    var team = []
+    var heads = []
+    var ends = []
+    const length = teamDetails[1].name.length
+    for (var i = 0; i < 2; i++) {
+        heads.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
+    }
+    for (var i = 2; i < length - 2; i++) {
+        team.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
+    }
+    for (var i = length - 2; i < length; i++) {
+        ends.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
+    }
 
     return (
         <>
@@ -38,8 +52,21 @@ const Team = () => {
                     </div>
                 </div>
                 {(state == 1) ?
+<<<<<<< HEAD
                     <div className="p-10 grid grid-col-2 gap-5 w-3/4 mx-auto text-white sans">
 
+=======
+                    <div className="w-full px-10 lg:px-0 lg:w-1/2 mx-auto text-white sans">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:w-3/4 mx-auto pb-10">
+                            {heads}
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                            {team}
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto py-10 lg:w-2/3">
+                            {ends}
+                        </div>
+>>>>>>> 4e21c6f98fe9bbc9c59097561935c221062ff896
                     </div> :
                     <div className="w-3/4 mx-auto">
                         <p className="text-white text-xl text-center pb-5">{teamDetails[state].content}</p>
