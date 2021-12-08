@@ -5,8 +5,6 @@ import Footer from '../components/Footer'
 import teamDetails from '../data/teamDetails.js'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import TD from '../components/TeamDetails'
-
 
 const Team = () => {
     const [state, setState] = useState(0)
