@@ -29,7 +29,7 @@ export default function Footer() {
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
-                                <div className="text-blue-400"><a href="">teresas@tedxstteresascollege.in</a></div>
+                                <div className="text-blue-400"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tedxstteresascollege@gmail.com">teresas@tedxstteresascollege.in</a></div>
                                 <div className="py-2 md:mr-5">
                                     <div className="hover:underline">Organizer</div>
                                     Sneha Anna George<br />
@@ -63,15 +63,15 @@ export default function Footer() {
                             <div className="text-right float-right">
                                 <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
-                                    <form 
-                                    onSubmit = { handleSubmit(onSubmit) } 
+                                    <form
+                                    onSubmit = { handleSubmit(onSubmit) }
                                     className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
                                             <div className="w-1/2">
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">Name</label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input name="name" 
+                                                <input name="name"
                                                 {...register("name", {
                                                     required: { value: true, message: "First name is required" },
                                                     maxLength: { value: 50, message: "Name is too long." },
@@ -79,7 +79,7 @@ export default function Footer() {
                                                   })}
                                                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
                                                 <span className="py-2 text-sm text-purple-400">
-                                                {errors.name?.message}    
+                                                {errors.name?.message}
                                                 </span>
                                                 <span></span>
                                             </div>
@@ -89,7 +89,7 @@ export default function Footer() {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Email </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input name="email" 
+                                                <input name="email"
                                                 {...register("emailID", {
                                                     required: {
                                                     value: true,
@@ -102,16 +102,16 @@ export default function Footer() {
                                                     minLength: {
                                                     value: 8,
                                                     message: "Too short to be an Email ID",
-                                                  },   
-                                                })} 
-                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 
-                                                px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white 
+                                                  },
+                                                })}
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1
+                                                px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white
                                                 focus:border-purple-500" id="inline-email" type="email"/>
                                                 <span className="py-2 text-sm text-purple-400">
                                                 {errors?.emailID?.message}
                                                 </span>
                                                 <span></span>
-                                                
+
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -122,7 +122,7 @@ export default function Footer() {
                                                 <input name="organisation" {...register("organisation", {
                                                     required: {
                                                       value: true,
-                                                      message: "Organisation is required"  
+                                                      message: "Organisation is required"
                                                     },
                                                     maxLength: {
                                                         value: 30,
@@ -132,10 +132,10 @@ export default function Footer() {
                                                         value: 2,
                                                         message: "Too short to be a valid organisation",
                                                     },
-                                                })} 
-                                                className="bg-gray-200 appearance-none border-2 border-gray-200 
-                                                rounded w-full py-1 px-3 text-gray-700 leading-tight 
-                                                focus:outline-none focus:bg-white focus:border-purple-500" 
+                                                })}
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200
+                                                rounded w-full py-1 px-3 text-gray-700 leading-tight
+                                                focus:outline-none focus:bg-white focus:border-purple-500"
                                                 id="inline-organisation" type="text"/>
                                                 <span className="py-2 text-sm text-purple-400">
                                                 {errors?.organisation?.message}
