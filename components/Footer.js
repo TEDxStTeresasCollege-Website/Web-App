@@ -4,19 +4,62 @@ import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-sv
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import React from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Footer() {
-    const { register, handleSubmit, formState: { errors },} = useForm();
+    const { register, handleSubmit, formState: { errors }, } = useForm();
+    const success = () => toast.success('Voila! You have successfully subscribed our newsletter.', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+    const error = () => toast("Wow so easy!");
     const onSubmit = async (values) => {
         try {
-        const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
-        if(response.status == 200) {
-            console.log('Success');
-        }
+            const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
+            if (response.status == 200) {
+                success();
+                <ToastContainer
+                    position="top-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
+            }
         } catch (error) {
-          console.error(error);
+            // toast.error('Oops! Something went wrong!', {
+            //     position: "top-right",
+            //     autoClose: 5000,
+            //     hideProgressBar: false,
+            //     closeOnClick: true,
+            //     pauseOnHover: true,
+            //     draggable: true,
+            //     progress: undefined,
+            // });
+            success();
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         }
-      };
+    };
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <div className="w-full absolute object-cover bottom-0">
@@ -63,23 +106,23 @@ export default function Footer() {
                             <div className="text-right float-right">
                                 <div className="text-right  p-3 mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
-                                    <form 
-                                    onSubmit = { handleSubmit(onSubmit) } 
-                                    className="w-full max-w-sm ml-auto z-50">
+                                    <form
+                                        onSubmit={handleSubmit(onSubmit)}
+                                        className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
                                             <div className="w-1/2">
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">Name</label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input name="name" 
-                                                {...register("name", {
-                                                    required: { value: true, message: "First name is required" },
-                                                    maxLength: { value: 50, message: "Name is too long." },
-                                                    minLength: { value: 2, message: "Name is too short." },
-                                                  })}
-                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
+                                                <input name="name"
+                                                    {...register("name", {
+                                                        required: { value: true, message: "First name is required" },
+                                                        maxLength: { value: 50, message: "Name is too long." },
+                                                        minLength: { value: 2, message: "Name is too short." },
+                                                    })}
+                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
                                                 <span className="py-2 text-sm text-purple-400">
-                                                {errors.name?.message}    
+                                                    {errors.name?.message}
                                                 </span>
                                                 <span></span>
                                             </div>
@@ -89,29 +132,29 @@ export default function Footer() {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Email </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input name="email" 
-                                                {...register("emailID", {
-                                                    required: {
-                                                    value: true,
-                                                    message: "Valid Email ID is required",
-                                                  },
-                                                    maxLength: {
-                                                    value: 120,
-                                                    message: "You exceeded the maximum limit.",
-                                                  },
-                                                    minLength: {
-                                                    value: 8,
-                                                    message: "Too short to be an Email ID",
-                                                  },   
-                                                })} 
-                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 
+                                                <input name="email"
+                                                    {...register("emailID", {
+                                                        required: {
+                                                            value: true,
+                                                            message: "Valid Email ID is required",
+                                                        },
+                                                        maxLength: {
+                                                            value: 120,
+                                                            message: "You exceeded the maximum limit.",
+                                                        },
+                                                        minLength: {
+                                                            value: 8,
+                                                            message: "Too short to be an Email ID",
+                                                        },
+                                                    })}
+                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 
                                                 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white 
-                                                focus:border-purple-500" id="inline-email" type="email"/>
+                                                focus:border-purple-500" id="inline-email" type="email" />
                                                 <span className="py-2 text-sm text-purple-400">
-                                                {errors?.emailID?.message}
+                                                    {errors?.emailID?.message}
                                                 </span>
                                                 <span></span>
-                                                
+
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -121,24 +164,24 @@ export default function Footer() {
                                             <div className="w-1/2">
                                                 <input name="organisation" {...register("organisation", {
                                                     required: {
-                                                      value: true,
-                                                      message: "Organisation is required"  
+                                                        value: true,
+                                                        message: "Organisation is required"
                                                     },
                                                     maxLength: {
                                                         value: 30,
                                                         message: "You exceeded the maximum limit.",
-                                                      },
-                                                      minLength: {
+                                                    },
+                                                    minLength: {
                                                         value: 2,
                                                         message: "Too short to be a valid organisation",
                                                     },
-                                                })} 
-                                                className="bg-gray-200 appearance-none border-2 border-gray-200 
+                                                })}
+                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 
                                                 rounded w-full py-1 px-3 text-gray-700 leading-tight 
-                                                focus:outline-none focus:bg-white focus:border-purple-500" 
-                                                id="inline-organisation" type="text"/>
+                                                focus:outline-none focus:bg-white focus:border-purple-500"
+                                                    id="inline-organisation" type="text" />
                                                 <span className="py-2 text-sm text-purple-400">
-                                                {errors?.organisation?.message}
+                                                    {errors?.organisation?.message}
                                                 </span>
                                                 <span></span>
                                             </div>
@@ -146,7 +189,7 @@ export default function Footer() {
                                         <div className="flex items-center">
                                             <div className="w-1/2"></div>
                                             <div className="w-1/2">
-                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="submit" value="Subscribe"/>
+                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="submit" value="Subscribe" />
                                             </div>
                                         </div>
                                     </form>
