@@ -25,7 +25,8 @@ CREATE TABLE `tedx`.`pre_event_reg` (
     `ph_no`  	     INT NOT NULL,
     `email`  		   varchar(45) NOT NULL,
     `designation`  varchar(45) NOT NULL,
-    `institution`  varchar(45) NOT NULL
+    `institution`  varchar(45) NOT NULL,
+    `aadhar`        varchar(45) NOT NULL, 
 );
 
 
