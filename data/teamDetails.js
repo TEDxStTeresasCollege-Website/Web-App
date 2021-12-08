@@ -26,13 +26,8 @@ const TeamDetails = [
       }, {
           content: "Write. Edit. Proofread. Repeat.Armed with communication and coordination skills, our Executive Team drafts all written content that you see: official mails, notifications, Instagram captions and event the text you're reading right now!",
           image: "/executive.jpg",
-<<<<<<< HEAD
           width:"4032",
           height:"3024"
-=======
-          width: "4032",
-          height: "3024"
->>>>>>> 4e21c6f98fe9bbc9c59097561935c221062ff896
       }, {
           content: "Painting the town in the iconic TEDx black and red (quite literally!) is our very own Media and Design Team. From the TEDx stage, to the merchandise our attendees take home, to the web pages you're viewing right now, this creative and artistic squad does it all!",
           image: "/mediaDesign.jpg",

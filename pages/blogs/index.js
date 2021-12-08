@@ -6,8 +6,8 @@ import BlogCard from '../../components/BlogCard';
 const Blogs = () => {
     const data = [
         {
-            title: "Post 1",
-            content: "This is the content for the post 1.This is an extra line to the blog post.",
+            title: "The Journey from a Vision to its Existence",
+            content: "- By Neha Cherian",
             url: "/blogs/1",
             imagesrc: "/team.jpg"
         },
@@ -25,7 +25,7 @@ const Blogs = () => {
             <div className='bg-night-sky bg-repeat-y bg-black'>
                 <div className="flex flex-col gap-5 items-center text-center justify-center font-sans text-white sans mx-auto w-3/4 min-h-screen pt-36">
                     <h1 className="text-5xl md:text-6xl pb-10 text-ted-red serif">Our Blogs</h1>
-                    <h3 className="text-sm md:text-xl text-center pb-5">A TEDx event is only as phenomenal as the team behind it. Behold, a troupe of carefully selected, brilliant minds, who encompass the essence of TEDx along with a stroke of creativity and enthusiasm. Our 32 volunteers are the hands behind the different parts of every event and together make up the 7 teams of TEDxStTeresasCollege. We proudly stand as one - united by a purpose to spread ideas worth sharing.</h3>
+                    <h3 className="text-sm md:text-xl text-center pb-5">A TEDx event is only as phenomenal as the team behind it. Behold, a troupe of carefully selected, brilliant minds, who encompass the essence of TEDx along with a stroke of creativity and enthusiasm. Our volunteers are the hands behind the different parts of every event and together make up the 7 teams of TEDxStTeresasCollege. We proudly stand as one - united by a purpose to spread ideas worth sharing.</h3>
 
                     <div className="grid lg:grid-cols-1 sm:grid-cols-1 gap-4 mx-auto w-full md:mb-20 h-full mb-10">
                         {data.map((item, index) => {
