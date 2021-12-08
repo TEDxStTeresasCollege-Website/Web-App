@@ -29,7 +29,7 @@ export default function Footer() {
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
-                                <div className="text-blue-400"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tedxstteresascollege@gmail.com">teresas@tedxstteresascollege.in</a></div>
+                                <div className="text-blue-400"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tedxstteresascollege@gmail.com">tedxstteresascollege@gmail.com</a></div>
                                 <div className="py-2 md:mr-5">
                                     <div className="hover:underline">Organizer</div>
                                     Sneha Anna George<br />
