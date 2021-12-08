@@ -43,8 +43,11 @@ const Cochym = () => {
             <PaymentForm />
           )}
         </div>
+        <div className="pb-10 pt-0 text-center">
+          <a href="/terms" className="text-sm hover:underline text-white-400">Terms and Conditions</a><br />
+          <a href="/privacy" className="text-sm hover:underline text-white-400">Privacy Policy</a>
+        </div>
       </div>
-
       <Footer />
     </>
   );
