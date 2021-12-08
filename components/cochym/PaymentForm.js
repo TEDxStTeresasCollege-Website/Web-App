@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+);
 
 const PaymentForm = () => {
   const [paymentStatus, setPaymentStatus] = useState("pending");
@@ -8,6 +14,7 @@ const PaymentForm = () => {
   const handlePayment = () => {
     try {
       // TODO: call payment API
+      axios.post("http://localhost:3000/api/checkout/session", data)
       setPaymentStatus("success");
     } catch (error) {
       console.log(error);
