@@ -12,7 +12,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
 
   const onSubmit = async (values) => {
     try {
-      // await axios.post("http://localhost:3000/api/data/details", values);
+      await axios.post("http://localhost:3000/api/data/cochym_reg", values);
       gotoNextPage();
     } catch (error) {
       console.error(error);
