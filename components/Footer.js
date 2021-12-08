@@ -9,8 +9,8 @@ export default function Footer() {
     const { register, handleSubmit, formState: { errors },} = useForm();
     const onSubmit = async (values) => {
         try {
-          await axios.post("http://localhost:3000/api/data/newsletter", values);
-        if(res.status == 200) {
+        const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
+        if(response.status == 200) {
             console.log('Success');
         }
         } catch (error) {
