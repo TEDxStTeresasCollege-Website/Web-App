@@ -5,7 +5,7 @@ const TeamDetails = [
      }, {
          name : ["Sneha Ann George", "Marianne Joseph","Christeena Abraham","Anna Kattampally","Aisha Hanan","Sreelakshmi Jayaprakash Pillai","Diya Mary Joshy","Nesrin KS","Boon Mourin Sebastine","Kate Roshan"],
          designation: ["Organizer", "Co-organizer","Curator","Event Manager","Design and Media Director","Marketing Director","Budgeting Manager","Website Manager","Operations Crew Head","Sponsorship Manager"],
-         image: ["/coreTeam/sneha.png", "/coreTeam/marianne.png","/coreTeam/christeena.png","/coreTeam/anna.png","/coreTeam/aisha.png","/coreTeam/sree.png","/coreTeam/diya.png","/coreTeam/nesrin.png","/coreTeam/boon.png","/coreTeam/kate.png"],
+         image: ["/coreTeam/sneha.png", "/coreTeam/marianne.jpg","/coreTeam/christeena.png","/coreTeam/anna.png","/coreTeam/aisha.png","/coreTeam/sree.png","/coreTeam/diya.png","/coreTeam/nesrin.png","/coreTeam/boon.png","/coreTeam/kate.png"],
       }, {
           content: "It's the era of social media and quality content is a game-changer. With pens stuck behind their ears and imaginations running wild,we present to you the curious minds who work to change your perspective towards ideas you never gave a second thought about. Here's our very own Content Curation Team!",
           image: "/content.jpg"
@@ -17,7 +17,9 @@ const TeamDetails = [
           image: "/backup.jpg"
       }, {
           content: "Write. Edit. Proofread. Repeat.Armed with communication and coordination skills, our Executive Team drafts all written content that you see: official mails, notifications, Instagram captions and event the text you're reading right now!",
-          image: "/executive.jpg"
+          image: "/executive.jpg",
+          width: "4032",
+          height: "3024"
       }, {
           content: "Painting the town in the iconic TEDx black and red (quite literally!) is our very own Media and Design Team. From the TEDx stage, to the merchandise our attendees take home, to the web pages you're viewing right now, this creative and artistic squad does it all!",
           image: "/mediaDesign.jpg"
