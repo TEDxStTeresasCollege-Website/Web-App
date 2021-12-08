@@ -20,12 +20,7 @@ const PaymentForm = () => {
       <div className="flex flex-col items-center justify-center p-6 mt-10 bg-gray-800 rounded-lg bg-opacity-60">
         <h1 className="mb-5 text-2xl text-white">Make your payment</h1>
         <div className="cursor-pointer" onClick={handlePayment}>
-          <Image
-            src="/stripe.svg"
-            height="50"
-            width="150"
-            layout="intrinsic"
-          ></Image>
+          <Image src="/stripe.svg" height="50" width="150" layout="intrinsic" />
         </div>
       </div>
     );
