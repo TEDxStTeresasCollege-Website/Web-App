@@ -17,15 +17,10 @@ const PaymentForm = () => {
 
   if (paymentStatus === "pending") {
     return (
-      <div className="flex flex-col items-center justify-center p-6 m-2 bg-gray-800 rounded-lg bg-opacity-60">
-        <h1 className="mb-5 text-2xl text-white">Payment</h1>
+      <div className="flex flex-col items-center justify-center p-6 mt-10 bg-gray-800 rounded-lg bg-opacity-60">
+        <h1 className="mb-5 text-2xl text-white">Make your payment</h1>
         <div className="cursor-pointer" onClick={handlePayment}>
-          <Image
-            src="/stripe.svg"
-            height="50"
-            width="150"
-            layout="intrinsic"
-          ></Image>
+          <Image src="/stripe.svg" height="50" width="150" layout="intrinsic" />
         </div>
       </div>
     );
@@ -33,7 +28,7 @@ const PaymentForm = () => {
 
   if (paymentStatus === "success") {
     return (
-      <div className="flex flex-col items-center justify-center space-y-5">
+      <div className="flex flex-col items-center justify-center mt-10 space-y-5">
         <p className="text-lg">
           Order placed! You will receive an email confirmation.
         </p>
@@ -50,7 +45,7 @@ const PaymentForm = () => {
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center mt-10 space-y-5">
       <p className="text-lg">
         Uh oh! Something went wrong. Please try again later!
       </p>
