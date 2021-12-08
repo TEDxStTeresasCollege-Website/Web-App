@@ -11,6 +11,11 @@ import 'aos/dist/aos.css';
 import { useEffect  } from 'react';
 
 export default function Home() {
+<<<<<<< Updated upstream
+=======
+  //const router = useRouter;
+  //const { session_id } = router.query; 
+>>>>>>> Stashed changes
 
   useEffect (() => {
     // INITIALIZE AOS
