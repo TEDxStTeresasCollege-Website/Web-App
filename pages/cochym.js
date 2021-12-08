@@ -5,22 +5,11 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 
-import NewsLetterForm from "../components/cochym/NewsletterForm";
-import PrivateDetailsForm from "../components/cochym/PrivateDetailsForm";
+import PersonalDetailsForm from "../components/cochym/PersonalDetailsForm";
 import PaymentForm from "../components/cochym/PaymentForm";
 
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-);
-
-export default function Cochym() {
+const Cochym = () => {
   const [pageNumber, setPageNumber] = useState(1);
-
-  const gotoNextPage = (pageNumber) => {
-    setPageNumber(pageNumber);
-  };
 
   return (
     <>
@@ -32,32 +21,31 @@ export default function Cochym() {
 
       <Navbar />
 
-      <div className="flex flex-col items-center justify-center min-h-screen pt-40 text-white bg-black bg-repeat-y bg-night-sky sans">
-        <h1 className="block mb-20 text-2xl text-center lg:text-4xl text-ted-red serif">
+      <div className="flex flex-col items-center min-h-screen mt-20 text-white bg-black bg-repeat-y bg-night-sky sans">
+        <h1 className="my-5 font-serif text-2xl lg:text-3xl text-ted-red">
           Pre-Event Registration Form
         </h1>
         <div className="">
           <Image
-            className=""
             src="/cochymLogo.png"
-            width="700"
-            height="250"
+            width="504"
+            height="180"
             layout="intrinsic"
           ></Image>
         </div>
 
         <div className="mx-auto mt-50">
-          {pageNumber === 1 && (
-            <NewsLetterForm gotoNextPage={() => gotoNextPage(2)} />
+          {pageNumber === 1 ? (
+            <PersonalDetailsForm gotoNextPage={() => setPageNumber(2)} />
+          ) : (
+            <PaymentForm />
           )}
-          {pageNumber === 2 && (
-            <PrivateDetailsForm gotoNextPage={() => gotoNextPage(3)} />
-          )}
-          {pageNumber === 3 && <PaymentForm />}
         </div>
       </div>
 
       <Footer />
     </>
   );
-}
+};
+
+export default Cochym;
