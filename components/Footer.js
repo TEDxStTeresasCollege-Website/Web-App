@@ -54,11 +54,11 @@ export default function Footer() {
             </div>
             <div className="relative w-full h-full block">
                 <div className="w-full h-full z-50">
-                    <div className="top-20 w-full p-10 pt-16">
+                    <div className="top-20 w-full p-5 md:px-10 md:pb-0 md:pt-16">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
                                 Reach out at :
-                                <div className="text-blue-400"><a href="">tedxstteresascollege@gmail.com</a></div>
+                                <div className="text-blue-400"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tedxstteresascollege@gmail.com">tedxstteresascollege@gmail.com</a></div>
                                 <div className="py-2 md:mr-5">
                                     <div className="hover:underline">Organizer</div>
                                     Sneha Anna George<br />
@@ -83,32 +83,34 @@ export default function Footer() {
                         <div className="flex flex-row">
                             <div className="text-left my-10 py-3 flex-1">
                                 Say Hello!
-                                <div className="flex justify-start gap-3 mt-3">
+                                <div className="flex justify-start gap-2 pr-4 md:gap-3 mt-3">
                                     <a href="https://instagram.com/tedxst_teresascollege"><span><FontAwesomeIcon icon={faInstagram} className="text-blue-400" size="2x" /></span></a>
                                     <a href="https://www.facebook.com/Tedxstteresascollege-102464092186247/"><span><FontAwesomeIcon icon={faFacebook} className="text-blue-400 ml-2" size="2x" /></span></a>
                                     <a href="https://www.linkedin.com/company/tedxstteresascollege"><span><FontAwesomeIcon icon={faLinkedin} className="text-blue-400 ml-2" size="2x" /></span></a>
                                 </div>
                             </div>
                             <div className="text-right float-right">
-                                <div className="text-right  p-3 mt-10 rounded-xl border lg:bg-gray-800">
+                                <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
                                     <form
                                         onSubmit={handleSubmit(onSubmit)}
                                         className="w-full max-w-sm ml-auto z-50">
+
                                         <div className="flex items-center mb-2">
                                             <div className="w-1/2">
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">Name</label>
                                             </div>
                                             <div className="w-1/2">
                                                 <input name="name"
-                                                    {...register("name", {
-                                                        required: { value: true, message: "First name is required" },
-                                                        maxLength: { value: 50, message: "Name is too long." },
-                                                        minLength: { value: 2, message: "Name is too short." },
-                                                    })}
-                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
+
+                                                {...register("name", {
+                                                    required: { value: true, message: "First name is required" },
+                                                    maxLength: { value: 50, message: "Name is too long." },
+                                                    minLength: { value: 2, message: "Name is too short." },
+                                                  })}
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
                                                 <span className="py-2 text-sm text-purple-400">
-                                                    {errors.name?.message}
+                                                {errors.name?.message}
                                                 </span>
                                                 <span></span>
                                             </div>
@@ -184,9 +186,9 @@ export default function Footer() {
                         </div>
 
                         <div className="pt-10 w-full text-center">
-                            <div>This independent event is operated under license from TED</div>
-                            <div className="text-2xl">. . . . . . . . . . . . . . . . . .</div>
-                            <div className="pt-3">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
+                            <div>This independent event is operated under the license from TED</div>
+                            <div className="md:text-lg font-bold -my-1">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
+                            <div className="pb-5">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
 
@@ -202,7 +204,3 @@ export default function Footer() {
         </footer>
     );
 }
-
-
-
-
