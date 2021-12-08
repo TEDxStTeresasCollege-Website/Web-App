@@ -1,27 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import React from "react";
 
-const Footer = () => {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [organisation, setOrganisation] = useState('')
-    function handleChangeName(e) {
-        setName(e.target.value)
-        console.log(name, e.target.value)
-    }
-    function handleChangeEmail(e) {
-        setEmail(e.target.value)
-    }
-    function handleChangeOrganisation(e) {
-        setOrganisation(e.target.value)
-    }
-    function handleSubmit(e) {
-        e.preventDefault()
-        console.log(name, email, organisation)
-    }
-
+export default function Footer() {
+    const { register, handleSubmit, formState: { errors },} = useForm();
+    const onSubmit = async (values) => {
+        try {
+          await axios.post("http://localhost:3000/api/data/newsletter", values);
+        if(res.status == 200) {
+            console.log('Success');
+        }
+        } catch (error) {
+          console.error(error);
+        }
+      };
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
             <div className="w-full absolute object-cover bottom-0">
@@ -68,13 +63,25 @@ const Footer = () => {
                             <div className="text-right float-right">
                                 <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
-                                    <form action="/home" className="w-full max-w-sm ml-auto z-50">
+                                    <form 
+                                    onSubmit = { handleSubmit(onSubmit) } 
+                                    className="w-full max-w-sm ml-auto z-50">
                                         <div className="flex items-center mb-2">
                                             <div className="w-1/2">
-                                                <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name"> Name </label>
+                                                <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">Name</label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="Your Name" onChange={handleChangeName} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" />
+                                                <input name="name" 
+                                                {...register("name", {
+                                                    required: { value: true, message: "First name is required" },
+                                                    maxLength: { value: 50, message: "Name is too long." },
+                                                    minLength: { value: 2, message: "Name is too short." },
+                                                  })}
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="name" />
+                                                <span className="py-2 text-sm text-purple-400">
+                                                {errors.name?.message}    
+                                                </span>
+                                                <span></span>
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -82,7 +89,29 @@ const Footer = () => {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Email </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="example@email.com" onChange={handleChangeEmail} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-email" type="email" />
+                                                <input name="email" 
+                                                {...register("emailID", {
+                                                    required: {
+                                                    value: true,
+                                                    message: "Valid Email ID is required",
+                                                  },
+                                                    maxLength: {
+                                                    value: 120,
+                                                    message: "You exceeded the maximum limit.",
+                                                  },
+                                                    minLength: {
+                                                    value: 8,
+                                                    message: "Too short to be an Email ID",
+                                                  },   
+                                                })} 
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 
+                                                px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white 
+                                                focus:border-purple-500" id="inline-email" type="email"/>
+                                                <span className="py-2 text-sm text-purple-400">
+                                                {errors?.emailID?.message}
+                                                </span>
+                                                <span></span>
+                                                
                                             </div>
                                         </div>
                                         <div className="flex items-center mb-2">
@@ -90,13 +119,34 @@ const Footer = () => {
                                                 <label className="block text-gray-100 text-right mb-1 md:mb-0 pr-4" htmlFor="inline-password"> Organisation </label>
                                             </div>
                                             <div className="w-1/2">
-                                                <input placeholder="Your Organisation" onChange={handleChangeOrganisation} className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-organisation" type="text" />
+                                                <input name="organisation" {...register("organisation", {
+                                                    required: {
+                                                      value: true,
+                                                      message: "Organisation is required"  
+                                                    },
+                                                    maxLength: {
+                                                        value: 30,
+                                                        message: "You exceeded the maximum limit.",
+                                                      },
+                                                      minLength: {
+                                                        value: 2,
+                                                        message: "Too short to be a valid organisation",
+                                                    },
+                                                })} 
+                                                className="bg-gray-200 appearance-none border-2 border-gray-200 
+                                                rounded w-full py-1 px-3 text-gray-700 leading-tight 
+                                                focus:outline-none focus:bg-white focus:border-purple-500" 
+                                                id="inline-organisation" type="text"/>
+                                                <span className="py-2 text-sm text-purple-400">
+                                                {errors?.organisation?.message}
+                                                </span>
+                                                <span></span>
                                             </div>
                                         </div>
                                         <div className="flex items-center">
                                             <div className="w-1/2"></div>
                                             <div className="w-1/2">
-                                                <input onClick={handleSubmit} className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="button" value="Subscribe" />
+                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="submit" value="Subscribe"/>
                                             </div>
                                         </div>
                                     </form>
@@ -123,5 +173,3 @@ const Footer = () => {
         </footer>
     );
 }
-
-export default Footer;

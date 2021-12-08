@@ -24,7 +24,9 @@ const Navbar = ({ hide }) => {
                         <Link href="/partners"><a className="navbar-link border border-gray-700 border-t-0">Our Partners</a></Link>
                         <Link href="/blogs"><a className="navbar-link border border-gray-700 border-t-0">Blog</a></Link>
                         <Link href="/speaker"><a className="navbar-link border border-gray-700 border-t-0">Nominate a Speaker</a></Link>
+                        <Link href="/privacy"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">Privacy Policy</a></Link>
                         <Link href="/team"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">Meet the Team</a></Link>
+                        <Link href="/terms"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">T&C</a></Link>
                     </ul>
                 </div>
             </nav>
