@@ -46,7 +46,7 @@ export default function Footer() {
         }
     };
     return (
-        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
+        <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black -z-50">
             <div className="w-full absolute object-cover bottom-0">
                 <img className="block sm:hidden" src="/mobile/footer.png"></img>
                 <img className="hidden sm:block" src="/web/footer.png"></img>
