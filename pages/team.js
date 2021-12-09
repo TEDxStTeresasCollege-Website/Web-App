@@ -36,7 +36,7 @@ const Team = () => {
             <div className="min-h-screen bg-night-sky bg-repeat-y bg-black">
                 <div className="flex flex-col gap-5 items-center text-center justify-center font-sans text-white mx-auto w-3/4 pt-52">
                     <h1 className="text-5xl md:text-6xl text-ted-red serif">Meet the Team</h1>
-                    <h3 className="text-sm md:text-xl text-center">A TEDx event is only as phenomenal as the team behind it. Behold, a troupe of carefully selected, brilliant minds, who encompass the essence of TEDx along with a stroke of creativity and enthusiasm. Our together make up the 9 teams of volunteers are the hands behind the different parts of every event and together make up the 7 teams of TEDxStTeresasCollege. We proudly stand as one - united by a purpose to spread ideas worth sharing.</h3>
+                    <h3 className="text-sm md:text-xl text-center">A TEDx event is only as phenomenal as the team behind it. Behold, a troupe of carefully selected, brilliant minds, who encompass the essence of TEDx along with a stroke of creativity and enthusiasm. Our group of volunteers are the hands behind the different parts of every event and together make up the 9 teams of TEDxStTeresasCollege. We proudly stand as one - united by a purpose to spread ideas worth sharing.</h3>
 
                     <div className="flex justify-center m-5 mt-10 gap-3 flex-wrap lg:w-3/4 mx-auto">
                         <Button text="All" click={() => setState(0)} />
