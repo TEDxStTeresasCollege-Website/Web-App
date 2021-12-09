@@ -44,6 +44,7 @@ const Cochym = () => {
           )}
         </div>
         <div className="pb-10 pt-0 text-center">
+          <p className="text-lg">Note: Ticket not inclusive of food charges.Stalls will be available on campus for purchasing food during the event</p>
           <a href="/terms" className="text-sm hover:underline text-white-400">Terms and Conditions</a><br />
           <a href="/privacy" className="text-sm hover:underline text-white-400">Privacy Policy</a>
         </div>

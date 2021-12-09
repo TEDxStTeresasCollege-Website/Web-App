@@ -145,8 +145,8 @@ export default function Footer() {
                                                             message: "Too short to be an Email ID",
                                                         },
                                                     })}
-                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 
-                                                px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white 
+                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1
+                                                px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white
                                                 focus:border-purple-500" id="inline-email" type="email" />
                                                 <span className="py-2 text-sm text-purple-400">
                                                     {errors?.emailID?.message}
@@ -174,8 +174,8 @@ export default function Footer() {
                                                         message: "Too short to be a valid organisation",
                                                     },
                                                 })}
-                                                    className="bg-gray-200 appearance-none border-2 border-gray-200 
-                                                rounded w-full py-1 px-3 text-gray-700 leading-tight 
+                                                    className="bg-gray-200 appearance-none border-2 border-gray-200
+                                                rounded w-full py-1 px-3 text-gray-700 leading-tight
                                                 focus:outline-none focus:bg-white focus:border-purple-500"
                                                     id="inline-organisation" type="text" />
                                                 <span className="py-2 text-sm text-purple-400">
