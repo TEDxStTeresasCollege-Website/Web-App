@@ -37,6 +37,7 @@ export default function Home () {
             draggable: true,
             progress: undefined,
         }); 
+        window.history.replaceState(null, '', '/')
         }
       } else if (cancelled) {
         toast.error('Payment Cancelled!', {
@@ -48,8 +49,8 @@ export default function Home () {
           draggable: true,
           progress: undefined,
       });
+      window.history.replaceState(null, '', '/')
       }
-    window.history.replaceState(null, '', '/')
     } catch (error){
       console.log(error)
     }
