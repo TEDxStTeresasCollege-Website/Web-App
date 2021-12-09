@@ -64,17 +64,7 @@ export default function Home () {
   }, [])
    return (
     <div>
-      <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
+      
       <Head>
         <title>TEDxStTeresasCollege : Home</title>
         <meta name="description" content="TEDxStTeresasCollege : Home" />

@@ -47,10 +47,17 @@ export default function Footer() {
     };
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans bg-black text-white bg-footer-mobile sm:bg-footer bg-cover bg-center bg-no-repeat">
-            {/* <div className="w-full absolute object-cover bottom-0 -z-50">
-                <img className="block sm:hidden" src="/mobile/footer.png"></img>
-                <img className="hidden sm:block" src="/web/footer.png"></img>
-            </div> */}
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
             <div className="relative w-full h-full block z-30">
                 <div className="w-full h-full">
                     <div className="top-20 w-full p-5 md:px-10 md:pb-0 md:pt-16">

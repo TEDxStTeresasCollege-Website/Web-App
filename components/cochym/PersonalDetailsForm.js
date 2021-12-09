@@ -16,7 +16,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
     try {
       const response = await axios.post(`${window.location.origin}/api/data/cochym_reg`, values);
       console.log(response.data)
-      if (response.status == 201){
+      if (response.status == 201) {
         toast.success(response.data.message, {
           position: "top-right",
           autoClose: 5000,
@@ -25,7 +25,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-      });
+        });
       } else {
         gotoNextPage();
       }
@@ -38,7 +38,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-    });
+      });
     }
   };
 
@@ -158,48 +158,37 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
   ];
 
   return (
-    <> 
-                <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      action="/api/checkout/session"
-      method="POST"
-      className="p-6 m-2 text-center bg-gray-800 rounded-lg bg-opacity-60"
-    >
-      <div className="grid grid-cols-2 gap-y-5">
-        {fields.map((field) => (
-          <React.Fragment key={field.name}>
-            <label className="text-lg text-left">{field.label}</label>
-            <div className="flex flex-col">
-              <input
-                name={field.name}
-                {...register(field.name, field.validations)}
-                className="px-2 text-gray-900 rounded-sm"
-              />
-              <span className="mt-2 text-sm text-left text-red-400">
-                {field.errors}
-              </span>
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
-      <button
-        type="submit"
-        className="px-4 py-2 mt-6 font-bold text-white rounded bg-ted-red"
+    <>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        action="/api/checkout/session"
+        method="POST"
+        className="p-6 m-2 text-center bg-gray-800 rounded-lg bg-opacity-60"
       >
-        Next
-      </button>
-    </form>
+        <div className="grid grid-cols-2 gap-y-5">
+          {fields.map((field) => (
+            <React.Fragment key={field.name}>
+              <label className="text-lg text-left">{field.label}</label>
+              <div className="flex flex-col">
+                <input
+                  name={field.name}
+                  {...register(field.name, field.validations)}
+                  className="px-2 text-gray-900 rounded-sm"
+                />
+                <span className="mt-2 text-sm text-left text-red-400">
+                  {field.errors}
+                </span>
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+        <button
+          type="submit"
+          className="px-4 py-2 mt-6 font-bold text-white rounded bg-ted-red"
+        >
+          Next
+        </button>
+      </form>
     </>
   );
 };
