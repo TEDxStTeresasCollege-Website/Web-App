@@ -19,7 +19,7 @@ const Speaker = () => {
                         <h1 className="text-5xl md:text-6xl serif text-ted-red pb-5">Nominate a Speaker</h1>
                         <h3 className="text-sm md:text-xl text-center p-2">At TEDxStTeresasCollege, we are always on the lookout for passionate speakers who have the power to influence curious minds to see their surroundings in a different light.  If you know someone who can present an inspiring idea to the TEDx community, or if you believe that you can do so, we would love to hear from you!</h3>
                         <h3 className="text-sm md:text-xl text-center p-2 pb-5">Please use our speaker recommendation form to tell us why this person would be a perfect speaker for a TEDxStTeresasCollege event.</h3>
-                        <button className="bg-water hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-sm md:text-md ">
+                        <button disabled={true} className="bg-water hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-sm md:text-md ">
                             Nominate a Speaker
                         </button>
                     </div>

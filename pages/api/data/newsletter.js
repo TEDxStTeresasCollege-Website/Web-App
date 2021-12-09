@@ -1,6 +1,7 @@
 import { sql_query } from '../../../lib/db'
 
 export default async function handler(req, res) {
+  console.log(req.body)
   const { name, emailID, organisation } = req.body
   try {
     const new_results = await sql_query (

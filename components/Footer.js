@@ -47,17 +47,6 @@ export default function Footer() {
     };
     return (
         <footer className="w-full text-xs md:text-sm relative min-h-full sans text-white bg-black mt-40 sm:mt-0">
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
             <div className="w-full absolute object-cover bottom-0">
                 <img className="block sm:hidden" src="/mobile/footer.png"></img>
                 <img className="hidden sm:block" src="/web/footer.png"></img>
@@ -103,7 +92,7 @@ export default function Footer() {
                                 <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
                                     <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
                                     <form
-                                        onSubmit={handleSubmit(onSubmit)}
+                                        onSubmit= {handleSubmit(onSubmit)}
                                         className="w-full max-w-sm ml-auto z-50">
 
                                         <div className="flex items-center mb-2">
@@ -187,7 +176,7 @@ export default function Footer() {
                                         <div className="flex items-center">
                                             <div className="w-1/2"></div>
                                             <div className="w-1/2">
-                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="submit" value="Subscribe" />
+                                                <input className="ml-auto shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-1 px-3 rounded" type="submit" value="Subscribe"/>
                                             </div>
                                         </div>
                                     </form>

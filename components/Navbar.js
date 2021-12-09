@@ -22,7 +22,7 @@ const Navbar = () => {
                         {/* <Link href="/circles"><a className="navbar-link border border-gray-700 border-t-0">TED Circles</a></Link> */}
                         <Link href="/partners"><a className="navbar-link border border-gray-700 border-t-0">Our Partners</a></Link>
                         <Link href="/blogs"><a className="navbar-link border border-gray-700 border-t-0">Blog</a></Link>
-                        <Link href="/speaker"><a className="navbar-link border border-gray-700 border-t-0">Nominate a Speaker</a></Link>
+                        {/* <Link href="/speaker"><a className="navbar-link border border-gray-700 border-t-0">Nominate a Speaker</a></Link> */}
                         <Link href="/team"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">Meet the Team</a></Link>
                     </ul>
                 </div>

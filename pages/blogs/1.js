@@ -15,7 +15,7 @@ const one = () => {
             <Navbar />
 
 
-            <div className="container min-h-screen bg-night-sky bg-repeat-y bg-black text-white pt-28">
+            <div className="min-h-screen bg-night-sky bg-repeat-y bg-black text-white pt-28 w-screen">
                 <div className="row">
                     <div className="col-md-12">
                         <h1 className="text-center text-ted-red serif text-5xl">The Journey from a Vision to its Existence</h1>
