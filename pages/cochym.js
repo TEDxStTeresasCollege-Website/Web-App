@@ -12,7 +12,7 @@ const Cochym = () => {
   const [pageNumber, setPageNumber] = useState(1);
 
   return (
-    <>
+    <div className="w-full">
       <Head>
         <title>Cochym : TEDxStTeresasCollege</title>
         <meta name="description" content="Cochym : TEDxStTeresasCollege" />
@@ -43,14 +43,22 @@ const Cochym = () => {
             <PaymentForm />
           )}
         </div>
-        <div className="pb-10 pt-0 text-center">
-          <p className="text-lg">Note: Ticket not inclusive of food charges.Stalls will be available on campus for purchasing food during the event</p>
-          <a href="/terms" className="text-sm hover:underline text-white-400">Terms and Conditions</a><br />
-          <a href="/privacy" className="text-sm hover:underline text-white-400">Privacy Policy</a>
+        <div className="pt-0 pb-10 text-center">
+          <p className="text-lg">
+            Note: Ticket not inclusive of food charges.Stalls will be available
+            on campus for purchasing food during the event
+          </p>
+          <a href="/terms" className="text-sm hover:underline text-white-400">
+            Terms and Conditions
+          </a>
+          <br />
+          <a href="/privacy" className="text-sm hover:underline text-white-400">
+            Privacy Policy
+          </a>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
