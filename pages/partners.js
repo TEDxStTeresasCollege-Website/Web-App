@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import PopUp from '../components/popUp';
 
 const Partners = () => {
     return (
@@ -13,8 +12,6 @@ const Partners = () => {
             </Head>
 
             <Navbar />
-
-            <PopUp />
 
             <div className='bg-night-sky bg-repeat-y bg-black'>
                 <div className="flex flex-col gap-5 items-center text-center justify-center sans text-white sans mx-auto w-3/4 min-h-screen">
