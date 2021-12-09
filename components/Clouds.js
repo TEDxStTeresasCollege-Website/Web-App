@@ -13,8 +13,8 @@ const Clouds = () => {
   };
 
   return (
-    <div className="absolute">
-      <div className="relative w-screen h-screen overflow-x-hidden">
+    <div className="absolute w-full">
+      <div className="relative w-full h-screen overflow-x-hidden">
         <img
           src="/web/clouds-left.png"
           style={{ left: `-${offset}px` }}
