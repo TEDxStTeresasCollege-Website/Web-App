@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const PersonalDetailsForm = ({ gotoNextPage }) => {
   const {
@@ -12,10 +14,31 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
 
   const onSubmit = async (values) => {
     try {
-      await axios.post("http://localhost:3000/api/data/cochym_reg", values);
-      gotoNextPage();
+      const response = await axios.post(`${window.location.origin}/api/data/cochym_reg`, values);
+      console.log(response.data)
+      if (response.status == 201){
+        toast.success(response.data.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+      });
+      } else {
+        gotoNextPage();
+      }
     } catch (error) {
-      console.error(error);
+      toast.error('Oops! Something went wrong!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
     }
   };
 
@@ -61,7 +84,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
           message: "Mobile number is required",
         },
         pattern: {
-          value: /^\d{10}$/,
+          value: /^(\+91)?\d{10}$/,
           message: "Mobile number must be valid",
         },
       },
@@ -135,6 +158,18 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
   ];
 
   return (
+    <> 
+                <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
     <form
       onSubmit={handleSubmit(onSubmit)}
       action="/api/checkout/session"
@@ -165,6 +200,7 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
         Next
       </button>
     </form>
+    </>
   );
 };
 

@@ -3,6 +3,12 @@ import { sql_query } from '../../../lib/db'
 export default async function handler(req, res) {
   const { name, emailID, organisation } = req.body
   try {
+    const new_results = await sql_query (
+      `SELECT email FROM newsletter WHERE email = '${emailID}'`
+    )
+    if (new_results.length !== 0){
+      return res.status(201).json({ message: "You are already subscribed!" })
+    }
     const results = await sql_query(
       `INSERT INTO 
       newsletter (username, email, organisation ) 

@@ -8,19 +8,73 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect  } from 'react';
-import { useRouter } from 'next/router'
-import { route } from 'next/dist/server/router'
 import Clouds from "../components/Clouds"
 import PopUp from "../components/popUp"
+import { useRouter } from 'next/dist/client/router'
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function Home() {
+
+export default function Home () {
+  const router = useRouter();
+  const success = router.query.success
+  const cancelled = router.query.cancelled
+  const  session_id  = router.query.session_id
+  
+  const onAvailable = async () => {
+    try {
+      console.log(success)
+      if (success){
+        const data = await axios.post(`${window.location.origin}/api/checkout/${router.query.session_id}`, session_id)
+        if (data.status == 200) {
+          toast.success('Payment Succesful!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        }); 
+        }
+      } else if (cancelled) {
+        toast.error('Payment Cancelled!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+      });
+      }
+    window.history.replaceState(null, '', '/')
+    } catch (error){
+      console.log(error)
+    }
+  }
+  useEffect(() => {
+    onAvailable();
+  }, [session_id, success, cancelled])
+  
   useEffect(() => {
     // INITIALIZE AOS
     AOS.init();
   }, [])
-
-  return (
+   return (
     <div>
+      <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
       <Head>
         <title>TEDxStTeresasCollege : Home</title>
         <meta name="description" content="TEDxStTeresasCollege : Home" />

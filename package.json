@@ -29,7 +29,8 @@
     "serverless-mysql": "^1.5.4",
     "sharp": "^0.29.2",
     "stripe": "^8.191.0",
-    "swiper": "^7.0.9"
+    "swiper": "^7.0.9",
+    "swr": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",

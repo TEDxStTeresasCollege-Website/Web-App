@@ -11,9 +11,19 @@ export default function Footer() {
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const onSubmit = async (values) => {
         try {
-            const response = await axios.post("http://localhost:3000/api/data/newsletter", values);
+            const response = await axios.post(`${window.location.origin}/api/data/newsletter`, values);
             if (response.status == 200) {
-                toast.success('Voila! You have successfully subscribed our newsletter.', {
+                toast.success('Voila! You have successfully subscribed to our newsletter.', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else if (response.status == 201) {
+                toast.success(response.data.message, {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,

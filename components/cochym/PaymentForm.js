@@ -14,7 +14,7 @@ const PaymentForm = () => {
   const handlePayment = async () => {
     try {
       // TODO: call payment API
-      const response = await axios.post("http://localhost:3000/api/checkout/session")
+      const response = await axios.post(`${window.location.origin}/api/checkout/session`)
       window.location.href=response.data
       //setPaymentStatus("success");
     } catch (error) {
