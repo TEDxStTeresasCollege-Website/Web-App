@@ -56,16 +56,6 @@ const Team = () => {
                     <div className="p-10 grid grid-col-2 gap-5 w-3/4 mx-auto text-white sans">
 
 =======
-                    <div className="w-full px-10 lg:px-0 lg:w-1/2 mx-auto text-white sans">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:w-3/4 mx-auto pb-10">
-                            {heads}
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                            {team}
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto py-10 lg:w-2/3">
-                            {ends}
-                        </div>
 >>>>>>> 4e21c6f98fe9bbc9c59097561935c221062ff896
                     </div> :
                     <div className="w-3/4 mx-auto">
