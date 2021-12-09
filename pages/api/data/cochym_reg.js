@@ -2,7 +2,6 @@ import { sql_query } from '../../../lib/db'
 
 export default async function handler(req, res) {
   const { firstName, lastName, mobile, emailID, designation, institution, aadhar } = req.body
-  console.log(req.body)
   try {
     const results = await sql_query(
       `INSERT INTO 
