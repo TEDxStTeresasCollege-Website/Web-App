@@ -4,7 +4,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="absolute top-0 flex items-center w-full z-50 text-sm bg-black px-2 md:px-5 lg:px-10">
+            <nav className="absolute top-0 flex items-center h-20 w-full z-50 text-sm bg-black px-2 md:px-5 lg:px-10">
 
                 <div className="flex-1 p-5">
                     <Link href="/"><img className='w-60' src="/tedXSTClogo.png"/></Link>
