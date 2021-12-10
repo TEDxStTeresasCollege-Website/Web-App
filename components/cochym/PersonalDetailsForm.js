@@ -140,22 +140,23 @@ const PersonalDetailsForm = ({ gotoNextPage }) => {
       },
       errors: errors?.institution?.message,
     },
-    {
-      name: "aadhar",
-      label: "Aadhar number: ",
-      validations: {
-        required: {
-          value: true,
-          message: "Aadhar number is required.",
-        },
-        pattern: {
-          value: /^\d{12}$/,
-          message: "Aadhar number must be valid",
-        },
-      },
-      errors: errors?.aadhar?.message,
-    },
   ];
+  //   {
+  //     name: "aadhar",
+  //     label: "Aadhar number: ",
+  //     validations: {
+  //       required: {
+  //         value: true,
+  //         message: "Aadhar number is required.",
+  //       },
+  //       pattern: {
+  //         value: /^\d{12}$/,
+  //         message: "Aadhar number must be valid",
+  //       },
+  //     },
+  //     errors: errors?.aadhar?.message,
+  //   },
+  // ];
 
   return (
     <>

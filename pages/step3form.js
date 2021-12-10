@@ -26,8 +26,8 @@ const newform = () => {
                         <input className="rounded-sm"></input>
                         <label className="text-xl md:text-2xl">Mobile Number :</label>
                         <input className="rounded-sm"></input>
-                        <label className="text-xl md:text-2xl">Aadhar Number :</label>
-                        <input className="rounded-sm"></input>
+                        {/* <label className="text-xl md:text-2xl">Aadhar Number :</label>
+                        <input className="rounded-sm"></input> */}
                     </div>
                     <div className="mt-10 flex justify-center">
                         <input type="submit" value="Submit" className="bg-ted-red text-white font-bold py-2 px-4 rounded w-1/3"></input>
