@@ -34,7 +34,7 @@ export default function Home() {
         <div className="absolute -z-1 h-full w-full hidden lg:block"><Image src="/web/homebg.png" layout="fill" /></div>
         <div className="flex flex-col gap-5 text-center items-center justify-center serif text-white min-h-screen px-2 w-full">
           <p className="font-bold text-3xl sm:text-4xl md:text-5xl animate__animated animate__zoomIn">Welcome to TEDxStTeresasCollege</p>
-          <p className="text-xl sm:text-3xl animate__animated animate__fadeInUp">Where perceptions meets new perspectives</p>
+          <p className="text-xl sm:text-3xl animate__animated animate__fadeInUp">Where perceptions meet new perspectives</p>
         </div>
       </section>
       <div className='bg-night-sky bg-repeat-y bg-black'>
