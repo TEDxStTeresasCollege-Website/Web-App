@@ -1,11 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
 
-const Navbar = ({ hide }) => {
+const Navbar = () => {
 
     return (
         <>
-            <nav className="absolute top-0 flex items-center w-full z-10 text-sm bg-black px-2 md:px-5 lg:px-10">
+            <nav className="absolute top-0 flex items-center h-20 w-full z-50 text-sm bg-black px-2 md:px-5 lg:px-10">
 
                 <div className="flex-1 p-5">
                     <Link href="/"><img className='w-60' src="/tedXSTClogo.png"/></Link>
@@ -20,22 +19,16 @@ const Navbar = ({ hide }) => {
                         <Link href="/"><a className="rounded-t navbar-link border border-gray-700">Home</a></Link>
                         <Link href="/about"><a className="navbar-link border border-gray-700 border-t-0">About TED/TEDx</a></Link>
                         <Link href="/cochym"><a className="navbar-link border border-gray-700 border-t-0">Cochym</a></Link>
-                        <Link href="/circles"><a className="navbar-link border border-gray-700 border-t-0">TED Circles</a></Link>
+                        {/* <Link href="/circles"><a className="navbar-link border border-gray-700 border-t-0">TED Circles</a></Link> */}
                         <Link href="/partners"><a className="navbar-link border border-gray-700 border-t-0">Our Partners</a></Link>
                         <Link href="/blogs"><a className="navbar-link border border-gray-700 border-t-0">Blog</a></Link>
-                        <Link href="/speaker"><a className="navbar-link border border-gray-700 border-t-0">Nominate a Speaker</a></Link>
-                        <Link href="/privacy"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">Privacy Policy</a></Link>
+                        {/* <Link href="/speaker"><a className="navbar-link border border-gray-700 border-t-0">Nominate a Speaker</a></Link> */}
                         <Link href="/team"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">Meet the Team</a></Link>
-                        <Link href="/terms"><a className="rounded-b navbar-link  border border-gray-700 border-t-0">T&C</a></Link>
                     </ul>
                 </div>
             </nav>
         </>
     );
-}
-
-Navbar.defaultProps = {
-    hide: 'opacity-100'
 }
 
 export default Navbar;

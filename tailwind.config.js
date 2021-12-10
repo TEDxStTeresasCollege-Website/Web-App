@@ -27,7 +27,8 @@ module.exports = {
       },
       backgroundImage: {
         'night-sky': "url('/web/bg.png')",
-        'footer': "url('/web/footer.png')"
+        'footer': "url('/web/footer.png')",
+        'footer-mobile': "url('/mobile/footer.png')"
        }
     },
   },
