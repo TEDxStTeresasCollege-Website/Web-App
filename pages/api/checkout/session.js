@@ -9,7 +9,7 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         line_items: [{
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: 'price_1K34tDSDyL6iNDSxXjBFxY97',
+            price: 'price_1K4nWeSDyL6iNDSxDCYNTt6U',
             quantity: 1,
           }],
         mode: 'payment',
