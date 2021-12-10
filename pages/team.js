@@ -46,7 +46,7 @@ const Team = () => {
                         <Button text="Backup Volunteers" click={() => setState(4)} />
                         <Button text="Executive Team" click={() => setState(5)} />
                         <Button text="Media & Design" click={() => setState(6)} />
-                        <Button text="Sponsorship Team" click={() => setState(7)} />
+                        <Button text="Sponsorship and Marketing Team" click={() => setState(7)} />
                         <Button text="Technical Team" click={() => setState(8)} />
                         <Button text="Operations Crew" click={() => setState(9)} />
                     </div>

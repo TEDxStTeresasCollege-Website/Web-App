@@ -97,7 +97,7 @@ export default function Footer() {
                             </div>
                             <div className="text-right float-right">
                                 <div className="text-right p-2 md:p-3 md:mt-10 rounded-xl border lg:bg-gray-800">
-                                    <h1 className="pb-3 text-md">Be the first one to get updates on our latest events</h1>
+                                    <h1 className="pb-3 text-md">Be the first one to get updates on our latest events!</h1>
                                     <form
                                         onSubmit={handleSubmit(onSubmit)}
                                         className="w-full max-w-sm ml-auto z-50">
@@ -194,7 +194,7 @@ export default function Footer() {
                         <div className="pt-10 w-full text-center">
                             <div>This independent event is operated under license from TED</div>
                             <div className="md:text-lg font-bold -my-1">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</div>
-                            <div className="pb-5">Website Created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
+                            <div className="pb-5">Website created by <a className='hover:underline' href="https://github.com/sharunrajeev">Sharun E Rajeev</a> and <a className='hover:underline' href="">Gaurav Bhat</a></div>
                         </div>
                     </div>
 

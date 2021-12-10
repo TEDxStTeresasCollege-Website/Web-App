@@ -68,7 +68,7 @@ export default function Home () {
     <div>
 
       <Head>
-        <title>TEDxStTeresasCollege : Home</title>
+        <title>Home : TEDxStTeresasCollege</title>
         <meta name="description" content="TEDxStTeresasCollege : Home" />
         <link rel="icon" href="logo.ico" />
       </Head>

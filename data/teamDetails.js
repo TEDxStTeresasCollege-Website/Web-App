@@ -5,7 +5,7 @@ const TeamDetails = [
         width:"6000",
         height:"3376"
      }, {
-         name : ["Sneha Ann George", "Marianne Joseph","Christeena Abraham","Anna Kattampally","Aisha Hanan","Sreelakshmi Jayaprakash Pillai","Diya Mary Joshy","Nesrin KS","Boon Mourin Sebastine","Kate Roshan"],
+         name : ["Sneha Anna George", "Marianne Joseph","Christeena Abraham","Anna Kattampally","Aisha Hanan","Sreelakshmi Jayaprakash Pillai","Diya Mary Joshy","Nesrin KS","Boon Mourin Sebastine","Kate Roshan"],
          designation: ["Organizer", "Co-organizer","Curator","Event Manager","Design and Media Director","Marketing Director","Budgeting Manager","Website Manager","Operations Crew Head","Sponsorship Manager"],
          image: ["/coreTeam/sneha.png", "/coreTeam/marianne.jpg","/coreTeam/christeena.png","/coreTeam/anna.png","/coreTeam/aisha.png","/coreTeam/sree.png","/coreTeam/diya.png","/coreTeam/nesrin.png","/coreTeam/boon.png","/coreTeam/kate.png"],
       }, {
@@ -14,7 +14,7 @@ const TeamDetails = [
           width:"4032",
           height:"3024"
       }, {
-          content: "From the lighting of the stage, to the ticket in your hand, to the placement of the chair you’re seated at - great care and consideration has been taken to ensure that all goes well before and during every TEDxStTeresasCollege event. Presenting our vibrant group of thirty who make up the Event Management Team.",
+          content: "From the lighting of the stage, to the ticket in your hand, to the placement of the chair you’re seated at - great care and consideration has been taken to ensure that all goes well before and during every TEDxStTeresasCollege event. Presenting our vibrant group of volunteers who make up the Event Management Team.",
           image: "/event.jpg",
           width:"4032",
           height:"3024"
@@ -24,7 +24,7 @@ const TeamDetails = [
           width:"4032",
           height:"3024"
       }, {
-          content: "Write. Edit. Proofread. Repeat.Armed with communication and coordination skills, our Executive Team drafts all written content that you see: official mails, notifications, Instagram captions and event the text you're reading right now!",
+          content: "Write. Edit. Proofread. Repeat. Armed with communication and coordination skills, our Executive Team drafts all written content that you see : official mails, notifications, Instagram captions and event the text you're reading right now!",
           image: "/executive.jpg",
           width:"4032",
           height:"3024"
