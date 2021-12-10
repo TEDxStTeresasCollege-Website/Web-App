@@ -45,8 +45,8 @@ const Cochym = () => {
         </div>
         <div className="pt-0 pb-10 text-center">
           <p className="text-lg">
-            Note: Ticket not inclusive of food charges.Stalls will be available
-            on campus for purchasing food during the event
+            Note: Ticket not inclusive of food charges. Stalls will be available
+            on campus for purchasing food during the event.
           </p>
           <a href="/terms" className="text-sm hover:underline text-white-400">
             Terms and Conditions

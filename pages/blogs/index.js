@@ -25,7 +25,7 @@ const Blogs = () => {
             <div className='bg-night-sky bg-repeat-y bg-black'>
                 <div className="flex flex-col gap-5 items-center text-center justify-center font-sans text-white sans mx-auto w-3/4 min-h-screen pt-36">
                     <h1 className="text-5xl md:text-6xl pb-10 text-ted-red serif">Our Blogs</h1>
-                    <h3 className="text-sm md:text-xl text-center pb-5">A TEDx event is only as phenomenal as the team behind it. Behold, a troupe of carefully selected, brilliant minds, who encompass the essence of TEDx along with a stroke of creativity and enthusiasm. Our volunteers are the hands behind the different parts of every event and together make up the 7 teams of TEDxStTeresasCollege. We proudly stand as one - united by a purpose to spread ideas worth sharing.</h3>
+                    <h3 className="text-sm md:text-xl text-center pb-5">Martin Luther once said, ”If you want to change the world, pick up a pen and write” and it holds true even in today’s age. The impact of a few delicately knitted and stirring words have the power to touch even the most indifferent of hearts. And our aim for this page is the same. This page is an extension of our efforts to provide a platform for the local community to express their voice and to bring people together by organizing TEDx Events and TED Circles. We are on a mission to help them embrace their differences and to strengthen their outlooks on different areas of life. </h3>
 
                     <div className="grid lg:grid-cols-1 sm:grid-cols-1 gap-4 mx-auto w-full md:mb-20 h-full mb-10">
                         {data.map((item, index) => {
