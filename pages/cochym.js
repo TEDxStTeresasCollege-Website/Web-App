@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import Clouds from "../components/cochym/Clouds";
 import PersonalDetailsForm from "../components/cochym/PersonalDetailsForm";
@@ -36,7 +38,7 @@ const Cochym = () => {
           ></Image>
         </div>
 
-        <div className="z-10 mx-auto mt-50">
+        {/* <div className="z-10 mx-auto mt-50">
           {pageNumber === 1 ? (
             <PersonalDetailsForm gotoNextPage={() => setPageNumber(2)} />
           ) : (
@@ -55,7 +57,17 @@ const Cochym = () => {
           <a href="/privacy" className="text-sm hover:underline text-white-400">
             Privacy Policy
           </a>
+        </div> */}
+
+        <div className="z-10 text-3xl text-center sans">
+          <h1 className="mt-20 m-5 font-bold">Limited tickets left!</h1>
+          <h3 className="m-5">To register</h3>
+          <div className="m-5">
+            <a className="no-underline hover:underline inline-block" href="https://wa.me/8078708025">
+              <FontAwesomeIcon icon={faWhatsapp} className="text-green-500 inline-block" /> 8078708025</a>
+          </div>
         </div>
+
       </div>
       <Footer />
     </div>
