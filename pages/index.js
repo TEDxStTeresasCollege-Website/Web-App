@@ -8,25 +8,24 @@ import Image from 'next/image'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect  } from 'react';
+import { useEffect } from 'react';
 import Clouds from "../components/Clouds"
-import PopUp from "../components/popUp"
 import { useRouter } from 'next/dist/client/router'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export default function Home () {
+export default function Home() {
   const router = useRouter();
   const success = router.query.success
   const cancelled = router.query.cancelled
-  const  session_id  = router.query.session_id
+  const session_id = router.query.session_id
 
   const onAvailable = async () => {
     try {
       console.log(success)
-      if (success){
+      if (success) {
         const data = await axios.post(`${window.location.origin}/api/checkout/${router.query.session_id}`, session_id)
         if (data.status == 200) {
           toast.success('Payment Succesful!', {
@@ -37,8 +36,8 @@ export default function Home () {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-        });
-        window.history.replaceState(null, '', '/')
+          });
+          window.history.replaceState(null, '', '/')
         }
       } else if (cancelled) {
         toast.error('Payment Cancelled!', {
@@ -49,10 +48,10 @@ export default function Home () {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-      });
-      window.history.replaceState(null, '', '/')
+        });
+        window.history.replaceState(null, '', '/')
       }
-    } catch (error){
+    } catch (error) {
       console.log(error)
     }
   }
@@ -64,7 +63,7 @@ export default function Home () {
     // INITIALIZE AOS
     AOS.init();
   }, [])
-   return (
+  return (
     <div>
 
       <Head>
@@ -74,20 +73,18 @@ export default function Home () {
       </Head>
 
       <Navbar />
-
-      <PopUp />
-
-      <section id="home" className="w-full h-screen relative text-white serif">
-        <div className="absolute -z-10 bg-black w-full h-full"></div>
-        <div className="absolute -z-1 h-full w-full block lg:hidden"><Image src="/mobile/homebg.png" layout="fill" /></div>
-        <div className="absolute -z-1 h-full w-full hidden lg:block"><Image src="/web/homebg.png" layout="fill" /></div>
-        <div className="flex flex-col gap-5 text-center items-center justify-center serif text-white min-h-screen px-2 w-full">
-          <p className="font-bold text-3xl sm:text-4xl md:text-5xl animate__animated animate__zoomIn">Welcome to TEDxStTeresasCollege</p>
-          <p className="text-xl sm:text-3xl animate__animated animate__fadeInUp">Where perceptions meet new perspectives</p>
-        </div>
-      </section>
       <div className='bg-night-sky bg-repeat-y bg-black'>
-        <Clouds />
+        <section id="home" className="w-full h-screen relative text-white serif">
+          <Clouds />
+          {/* <div className="absolute -z-10 bg-black w-full h-full"></div> */}
+          {/* <div className="absolute -z-1 h-full w-full block lg:hidden"><Image src="/mobile/homebg.png" layout="fill" /></div>
+        <div className="absolute -z-1 h-full w-full hidden lg:block"><Image src="/web/homebg.png" layout="fill" /></div> */}
+          <div className="flex flex-col gap-5 text-center items-center justify-center serif text-white min-h-screen px-2 w-full">
+            <p className="font-bold text-3xl sm:text-4xl md:text-5xl animate__animated animate__zoomIn">Welcome to TEDxStTeresasCollege</p>
+            <p className="text-xl sm:text-3xl animate__animated animate__fadeInUp">Where perceptions meet new perspectives</p>
+          </div>
+        </section>
+
         <section id="vision" className="w-full h-full lg:min-h-screen text-white bg-night-sky-web">
           <div className="flex flex-col justify-center items-center text-justify lg:text-center sans mx-auto h-full lg:min-h-screen py-20 lg:py-0 w-full md:w-3/4 px-10 lg:px-20">
             <h1 data-aos="fade-up" className="font-bold text-5xl md:text-6xl pb-10 text-ted-red serif">Our Vision</h1>

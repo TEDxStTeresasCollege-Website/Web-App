@@ -25,7 +25,7 @@ const Cochym = () => {
 
       <Clouds />
 
-      <div className="flex flex-col items-center min-h-screen mt-20 text-white bg-black bg-repeat-y bg-night-sky sans">
+      <div className="flex flex-col items-center min-h-screen mt-20 text-white bg-black bg-repeat-y bg-night-sky sans pt-32">
         <h1 className="z-10 my-5 font-serif text-2xl lg:text-3xl text-ted-red">
           Pre-Event Registration Form
         </h1>
@@ -59,13 +59,9 @@ const Cochym = () => {
           </a>
         </div> */}
 
-        <div className="z-10 text-3xl text-center sans">
-          <h1 className="mt-20 m-5 font-bold">Limited tickets left!</h1>
-          <h3 className="m-5">To register</h3>
-          <div className="m-5">
-            <a className="no-underline hover:underline inline-block" href="https://wa.me/8078708025">
-              <FontAwesomeIcon icon={faWhatsapp} className="text-green-500 inline-block" /> 8078708025</a>
-          </div>
+        <div className="z-10 text-4xl text-center sans">
+          <div className="mt-20 m-2 font-bold">Tickets sold out!</div>
+          <div className="m-5 font-bold">Thank you for registering for Cochym</div>
         </div>
 
       </div>
