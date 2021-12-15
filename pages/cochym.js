@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import Clouds from "../components/cochym/Clouds";
 import PersonalDetailsForm from "../components/cochym/PersonalDetailsForm";
@@ -23,7 +25,7 @@ const Cochym = () => {
 
       <Clouds />
 
-      <div className="flex flex-col items-center min-h-screen mt-20 text-white bg-black bg-repeat-y bg-night-sky sans">
+      <div className="flex flex-col items-center min-h-screen mt-20 text-white bg-black bg-repeat-y bg-night-sky sans pt-32">
         <h1 className="z-10 my-5 font-serif text-2xl lg:text-3xl text-ted-red">
           Pre-Event Registration Form
         </h1>
@@ -36,7 +38,7 @@ const Cochym = () => {
           ></Image>
         </div>
 
-        <div className="z-10 mx-auto mt-50">
+        {/* <div className="z-10 mx-auto mt-50">
           {pageNumber === 1 ? (
             <PersonalDetailsForm gotoNextPage={() => setPageNumber(2)} />
           ) : (
@@ -55,7 +57,13 @@ const Cochym = () => {
           <a href="/privacy" className="text-sm hover:underline text-white-400">
             Privacy Policy
           </a>
+        </div> */}
+
+        <div className="z-10 text-4xl text-center sans">
+          <div className="mt-20 m-2 font-bold">Tickets sold out!</div>
+          <div className="m-5 font-bold">Thank you for registering for Cochym</div>
         </div>
+
       </div>
       <Footer />
     </div>
