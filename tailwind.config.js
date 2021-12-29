@@ -19,8 +19,9 @@ module.exports = {
         'card-3': '#d47e97',
         'card-4': '#f59193',
         'card-5': '#faad91',
-        'card-6': '',
-        'card-7': '',
+        'cyno-1': '#000004',
+        'cyno-2': '#030051',
+        'cyno-3': '#4b2266',
         'water': '#0889ab',
         'water-dark': '#0889ab',
         'ted-red': '#e9280b'
@@ -28,7 +29,8 @@ module.exports = {
       backgroundImage: {
         'night-sky': "url('/web/bg.png')",
         'footer': "url('/web/footer.png')",
-        'footer-mobile': "url('/mobile/footer.png')"
+        'footer-mobile': "url('/mobile/footer.png')",
+        'white-dots': "url('/WhiteDots.png')",
        }
     },
   },
