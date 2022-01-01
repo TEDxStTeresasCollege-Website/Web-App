@@ -10,43 +10,6 @@ import SpeakerCard from "../components/cynosure/speakerCard";
 import SpeakerCardMobile from "../components/cynosure/speakerCardMobile";
 
 const cynosure = () => {
-    const { register, handleSubmit, formState: { errors }, } = useForm();
-    const onSubmit = async (values) => {
-        try {
-            const response = await axios.post(`${window.location.origin}/api/data/newsletter`, values);
-            if (response.status == 200) {
-                toast.success('Voila! You have successfully subscribed to our newsletter.', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            } else if (response.status == 201) {
-                toast.success(response.data.message, {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                });
-            }
-        } catch (error) {
-            toast.error('Oops! Something went wrong!', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
-    };
     return (
         <div className="text-white min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-cyno-1 via-cyno-2 to-cyno-3">
             <Head>
