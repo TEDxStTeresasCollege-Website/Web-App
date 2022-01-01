@@ -8,6 +8,7 @@ import Slide from '../components/Slide'
 import cynoSlider from '../data/cynoSlider'
 import SpeakerCard from "../components/cynosure/speakerCard";
 import SpeakerCardMobile from "../components/cynosure/speakerCardMobile";
+import { useForm } from "react-hook-form";
 
 const cynosure = () => {
     const { register, handleSubmit, formState: { errors }, } = useForm();
