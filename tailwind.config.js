@@ -22,9 +22,12 @@ module.exports = {
         'cyno-1': '#000004',
         'cyno-2': '#030051',
         'cyno-3': '#4b2266',
+        'cyno': '#8b66a1',
         'water': '#0889ab',
         'water-dark': '#0889ab',
-        'ted-red': '#e9280b'
+        'ted-red': '#e9280b',
+        'footer-black': '#090b0c',
+        'footer-black-1': '#050708'
       },
       backgroundImage: {
         'night-sky': "url('/web/bg.png')",
