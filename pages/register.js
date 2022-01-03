@@ -65,10 +65,12 @@ const register = () => {
                     <Image className="" src="/CynosureLogo.png" height={2251} width={2251} loading="eager" />
                 </div>
                 <div className="px-10">
-                    <p className="text-lg lg:text-xl xl:text-2xl">Non aute anim exercitation aute nostrud ex ad do in dolor non velit. Occaecat ex excepteur exercitation aliquip ut nostrud enim consectetur.</p>
-                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">Non aute anim exercitation aute nostrud ex ad do in dolor non velit. Occaecat ex excepteur exercitation aliquip ut nostrud enim consectetur.</p>
+                <h1 className="serif text-2xl md:text-3xl lg:text-4xl mt-20 font-bold text-center">Registration Instructions</h1>
+              <br></br>  <h3 className="text-sm md:text-xl sans text-justify">1)There will be no refund of tickets once purchased.<br /><br />2) Ticket price is inclusive of entry to venue,lounges,activities,refreshments and lunch<br /><br />3) Payment will be accepted through Google pay only<br /><br />4) Kindly complete the registration form provided after the payment on the next step<br /><br />5) For any queries, kindly conatct +919447378402 (Aparna Panicker)<br /><br /></h3>  
                 </div>
             </div>
+
+          
 
             {/* Footer */}
             <footer className="w-full" >

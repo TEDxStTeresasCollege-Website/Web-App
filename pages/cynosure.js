@@ -3,7 +3,6 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-import Footer from '../components/cynosure/Footer';
 import Slide from '../components/Slide'
 import cynoSlider from '../data/cynoSlider'
 import SpeakerCard from "../components/cynosure/speakerCard";
@@ -13,7 +12,6 @@ import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useForm } from "react-hook-form";
 import axios from "axios";
 import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
@@ -73,8 +71,12 @@ const cynosure = () => {
                     <Image className="" src="/CynosureLogo.png" height={2251} width={2251} loading="eager" />
                 </div>
                 <div className="px-10">
-                    <p className="text-lg lg:text-xl xl:text-2xl">Non aute anim exercitation aute nostrud ex ad do in dolor non velit. Occaecat ex excepteur exercitation aliquip ut nostrud enim consectetur.</p>
-                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">Non aute anim exercitation aute nostrud ex ad do in dolor non velit. Occaecat ex excepteur exercitation aliquip ut nostrud enim consectetur.</p>
+                    <p className="text-lg lg:text-xl xl:text-2xl">A 16th century French word you may not have heard of until now, 'CYNOSURE' means "to be the centre of admiration and attention". </p>
+                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">It's about placing things that matter, in the spotlight. Because, you matter. Your struggles matter.
+                    The path that you build for yourself, matters.</p>
+                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">Overcome your inhibitions and seize the spotlight, and do it with zest and pride.
+                     Be a polestar that brings new perspectives into redefined focus.
+                    Be unapologetically you. </p>
                 </div>
             </div>
 
@@ -85,53 +87,55 @@ const cynosure = () => {
 
                 {/* Mobile View */}
                 <SpeakerCardMobile
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/gauthami.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Gauthami Nair"
+                    details="Gauthami Nair, an adept actress and a proficient director, is a name familiar to all Malayalees. Her flamboyant personality mixed with her soul-stirring acting has made her one of the most illustrious actresses in the Malyalam film industry. Having made her mark through films like The Diamond Necklace and Second Show, she also directed Vrittham, a movie that made history with an all-women crew. Currently doing research in neuroscience at Sree Chitra Hospital, Trivandrum, her determination and mettle has incited many aspiring women directors to take the big step and prove their competence in the field."
                 />
 
                 <SpeakerCardMobile
                     imgsrc="/cynosure/Meera.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Rojin Thomas"
+                    details="One of most reowned film directors and scriptwriters in the Malayalam film industry, he is the brain behind some of your favourite movies like Home and Philips and the Monkey Pen. With ideas and stories that can move the most indifferent of hearts, Mr. Thomas finds a way every time to connect his stories with the daily hustles of the common man. Home is a blockbuster hit that brought many deep-rooted issues into the limelight with a simple story of a family man and was extremely well-received by the Malayali audience."
+                />
+
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/gauthami.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Dr. Fathima Nilufer Sheriff"
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it. 
+                    The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
+                />
+
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/Don Paul.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Don Paul"
+                    details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
                 />
 
                 <SpeakerCardMobile
                     imgsrc="/cynosure/Meera.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                />
-
-                <SpeakerCardMobile
-                    imgsrc="/cynosure/Meera.png"
-                    imgwidth="971"
-                    imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                />
-
-                <SpeakerCardMobile
-                    imgsrc="/cynosure/Meera.png"
-                    imgwidth="971"
-                    imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Meera Singhania Rehani"
+                    details="Meera Singhania Rehani is a proud trans woman model who has fought for herself against the society. Her jaw-dropping performance in the Bhima Jewellery's ad has transcended all stereotypes against the LQBTQ+ community. 
+                    She has touched thousands of people with her story and continues to stand up for the community in whatever she does."
                 />
 
                 {/* Web View */}
                 <SpeakerCard
                     option='left'
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/gauthami.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Gauthami Nair"
+                    details="Gauthami Nair, an adept actress and a proficient director, is a name familiar to all Malayalees. Her flamboyant personality mixed with her soul-stirring acting has made her one of the most illustrious actresses in the Malyalam film industry. Having made her mark through films like The Diamond Necklace and Second Show, she also directed Vrittham, a movie that made history with an all-women crew. Currently doing research in neuroscience at Sree Chitra Hospital, Trivandrum, her determination and mettle has incited many aspiring women directors to take the big step and prove their competence in the field."
                 />
 
                 <SpeakerCard
@@ -139,8 +143,8 @@ const cynosure = () => {
                     imgsrc="/cynosure/Meera.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Rojin Thomas"
+                    details="One of most reowned film directors and scriptwriters in the Malayalam film industry, he is the brain behind some of your favourite movies like Home and Philips and the Monkey Pen. With ideas and stories that can move the most indifferent of hearts, Mr. Thomas finds a way every time to connect his stories with the daily hustles of the common man. Home is a blockbuster hit that brought many deep-rooted issues into the limelight with a simple story of a family man and was extremely well-received by the Malayali audience."
                 />
 
                 <SpeakerCard
@@ -148,17 +152,18 @@ const cynosure = () => {
                     imgsrc="/cynosure/Meera.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Dr. Fathima Nilufer Sheriff"
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala. A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it. 
+                    The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
                 />
 
                 <SpeakerCard
                     option='right'
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/Don Paul.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Don Paul"
+                    details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
                 />
 
                 <SpeakerCard
@@ -166,8 +171,9 @@ const cynosure = () => {
                     imgsrc="/cynosure/Meera.png"
                     imgwidth="971"
                     imgheight="971"
-                    speaker="Meera"
-                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    speaker="Meera Singhania Rehani"
+                    details="Meera Singhania Rehani is a proud trans woman model who has fought for herself against the society. Her jaw-dropping performance in the Bhima Jewellery's ad has transcended all stereotypes against the LQBTQ+ community. 
+                    She has touched thousands of people with her story and continues to stand up for the community in whatever she does."
                 />
 
             </div>
