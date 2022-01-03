@@ -19,16 +19,21 @@ module.exports = {
         'card-3': '#d47e97',
         'card-4': '#f59193',
         'card-5': '#faad91',
-        'card-6': '',
-        'card-7': '',
+        'cyno-1': '#000004',
+        'cyno-2': '#030051',
+        'cyno-3': '#4b2266',
+        'cyno': '#8b66a1',
         'water': '#0889ab',
         'water-dark': '#0889ab',
-        'ted-red': '#e9280b'
+        'ted-red': '#e9280b',
+        'footer-black': '#090b0c',
+        'footer-black-1': '#050708'
       },
       backgroundImage: {
         'night-sky': "url('/web/bg.png')",
         'footer': "url('/web/footer.png')",
-        'footer-mobile': "url('/mobile/footer.png')"
+        'footer-mobile': "url('/mobile/footer.png')",
+        'white-dots': "url('/WhiteDots.png')",
        }
     },
   },

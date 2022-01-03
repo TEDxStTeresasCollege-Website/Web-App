@@ -16,12 +16,12 @@ const Team = () => {
     for (var i = 0; i < 2; i++) {
         heads.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
     }
-    for (var i = 2; i < length - 2; i++) {
+    for (var i = 2; i < length; i++) {
         team.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
     }
-    for (var i = length - 2; i < length; i++) {
-        ends.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
-    }
+    // for (var i = length - 2; i < length; i++) {
+    //     ends.push(<TeamCard name={teamDetails[1].name[i]} designation={teamDetails[1].designation[i]} image={teamDetails[1].image[i]} />);
+    // }
 
     return (
         <>
@@ -59,9 +59,9 @@ const Team = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                             {team}
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto py-10 lg:w-2/3">
+                        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto py-10 lg:w-2/3">
                             {ends}
-                        </div>
+                        </div> */}
                     </div> :
                     <div className="w-3/4 mx-auto">
                         <p className="text-white text-xl text-center pb-5">{teamDetails[state].content}</p>
