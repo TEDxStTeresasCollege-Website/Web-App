@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
 import React from "react";
@@ -70,7 +71,13 @@ const register = () => {
                 </div>
             </div>
 
-          
+            <div className="py-10 flex justify-center">
+                    <Link href='/qr'>
+                        <button className="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded text-sm lg:text-lg">
+                            proceed to pay
+                        </button>
+                    </Link>
+                </div>
 
             {/* Footer */}
             <footer className="w-full" >
