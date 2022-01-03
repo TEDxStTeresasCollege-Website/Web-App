@@ -98,8 +98,8 @@ export default function Home() {
             <div className=" bg-gray-800 rounded-lg m-2 bg-opacity-60 flex justify-center items-center flex-col h-full p-20">
               <h2 className="text-2xl font-bold mb-2 serif">Up Next ...</h2>
               <div className="pt-4">
-                <p className="text-xl text-ted-red">Cochym</p>
-                <a href="/cochym" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-xl text-ted-red">Cynosure</p>
+                <a href="/cynosure" className="text-sm hover:underline text-blue-400">Read More</a>
               </div>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg m-2 bg-opacity-60 py-16">
