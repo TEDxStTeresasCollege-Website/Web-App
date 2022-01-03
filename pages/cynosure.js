@@ -181,7 +181,7 @@ const cynosure = () => {
             {/* Performer LineUp */}
             <div className="px-5 bg-white-dots w-full md:w-4/5 lg:w-5/6 mx-auto">
                 <h1 className="serif text-4xl md:text-5xl lg:text-6xl my-20 font-bold text-center hover:underline">Performers Line Up</h1>
-                <div className="w-4/5 mx-auto"><Slide images={cynoSlider} /></div>
+                <div className="w-full md:w-4/5 mx-auto"><Slide images={cynoSlider} /></div>
                 <div className="py-10 flex justify-center">
                     <Link href='/register'>
                         <button className="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded text-sm lg:text-lg">
@@ -204,7 +204,7 @@ const cynosure = () => {
                     draggable
                     pauseOnHover
                 />
-                <div className="w-full mt-20 text-sm lg:text-lg xl:text-xl">
+                <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
                     <div className="bg-white-dots md:hidden"><img src="/mobile/FooterGirl.png" width="1081" height="1453" /></div>
                     <div className="bg-white-dots hidden md:block"><img src="/web/cynosureFooter.png" width="2673" height="1615" /></div>
                     <div className="p-5 lg:px-10 w-full bg-footer-black md:bg-footer-black-1">

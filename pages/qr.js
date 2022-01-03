@@ -62,8 +62,12 @@ const register = () => {
 
            
             <h1 className="serif text-2xl md:text-3xl lg:text-4xl mt-20 font-bold text-center">Payment Instructions</h1>
-            <h3 className="text-sm md:text-xl sans text-justify p-12">1)Kindly scan the QR code given below for ticket payment to Rachel Reji<br /><br />2) The rate per ticket is 1500/-, iclusive of entry to venue,lounges, activities,refreshments and lunch<br /><br />3) When making payment <b>please mention the full name of the attendee in the GPay description</b><br /><br />4) after making payment, please take a <b>screenshot clearly showing the amount,description and transaction ID.</b>This will be used as proof of payment in the registration form.<br /><br />5) Kindly complete the registration form provided after payment on the next step.<br /><br /> 6) Incomplete GPay registrations will not be refunded<br /><br /></h3>  
-            <img src="/qr_code.jpeg" width="25%"/>
+            <h3 className="w-full md:w-4/5 lg:w-2/3 text-sm md:text-xl sans text-left p-12">1) Kindly scan the QR code given below for ticket payment to Rachel Reji
+            <br /><br />2) The rate per ticket is 1500/-,inclusive of entry to venue,lounges, activities,refreshments and lunch
+            <br /><br />3) When making payment <b>please mention the full name of the attendee in the GPay description</b>
+            <br /><br />4) After making payment,please take a <b>screenshot clearly showing the amount,description and transaction ID.</b>This will be used as proof of payment in the registration form.
+                <br /><br />5) Kindly complete the registration form provided after payment on the next step.<br /><br /> 6) Incomplete GPay registrations will not be refunded<br /><br /></h3>  
+            <img className="w-1/2 lg:w-1/4" src="/qr.jpeg" width="50%"/>
            
             
 
@@ -88,7 +92,7 @@ const register = () => {
                     draggable
                     pauseOnHover
                 />
-                <div className="w-full mt-20 text-sm lg:text-lg xl:text-xl">
+                <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
                     <div className="bg-white-dots md:hidden"><img src="/register/grassMobile.png" width="1920" height="477" /></div>
                     <div className="bg-white-dots hidden md:block"><img src="/register/grass.png" width="2672" height="502" /></div>
                     <div className="p-5 lg:px-10 w-full bg-footer-black md:bg-footer-black-1">

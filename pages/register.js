@@ -96,24 +96,12 @@ const register = () => {
             Registration Instructions
           </h1>
           <br></br>{" "}
-          <h3 className="text-sm text-justify md:text-xl sans">
-            1)There will be no refund of tickets once purchased.
-            <br />
-            <br />
-            2) Ticket price is inclusive of entry to
-            venue,lounges,activities,refreshments and lunch
-            <br />
-            <br />
-            3) Payment will be accepted through Google pay only
-            <br />
-            <br />
-            4) Kindly complete the registration form provided after the payment
-            on the next step
-            <br />
-            <br />
-            5) For any queries, kindly conatct +919447378402 (Aparna Panicker)
-            <br />
-            <br />
+          <h3 className="w-full md:w-5/5 lg:w-7/7 text-sm md:text-xl sans text-left p-12">
+            1) There will be no refund of tickets once purchased <br /><br />
+            2) Ticket price is inclusive of entry to venue,lounges,activities,refreshments and lunch <br /> <br />
+            3) Payment will be accepted through Google pay only<br /><br />
+            4) Kindly complete the registration form provided after the payment on the next step  <br />  <br />
+            5) For any queries, kindly conatct +919447378402 (Aparna Panicker)<br /><br />
           </h3>
         </div>
       </div>
@@ -152,7 +140,7 @@ const register = () => {
           draggable
           pauseOnHover
         />
-        <div className="w-full mt-20 text-sm lg:text-lg xl:text-xl">
+        <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
           <div className="bg-white-dots md:hidden">
             <img src="/register/grassMobile.png" width="1920" height="477" />
           </div>
