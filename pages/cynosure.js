@@ -95,7 +95,7 @@ const cynosure = () => {
                 />
 
                 <SpeakerCardMobile
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/Rojin Thomas.png"
                     imgwidth="971"
                     imgheight="971"
                     speaker="Rojin Thomas"
@@ -103,7 +103,7 @@ const cynosure = () => {
                 />
 
                 <SpeakerCardMobile
-                    imgsrc="/cynosure/gauthami.png"
+                    imgsrc="/cynosure/nilufer.png"
                     imgwidth="971"
                     imgheight="971"
                     speaker="Dr. Fathima Nilufer Sheriff"
@@ -140,7 +140,7 @@ const cynosure = () => {
 
                 <SpeakerCard
                     option='right'
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/Rojin Thomas.png"
                     imgwidth="971"
                     imgheight="971"
                     speaker="Rojin Thomas"
@@ -149,7 +149,7 @@ const cynosure = () => {
 
                 <SpeakerCard
                     option='left'
-                    imgsrc="/cynosure/Meera.png"
+                    imgsrc="/cynosure/nilufer.png"
                     imgwidth="971"
                     imgheight="971"
                     speaker="Dr. Fathima Nilufer Sheriff"
