@@ -61,13 +61,13 @@ const register = () => {
             <Navbar />
 
            
-            <h1 className="serif text-2xl md:text-3xl lg:text-4xl mt-20 font-bold text-center">Payment Instructions</h1>
+            <h1 className="serif text-2xl md:text-3xl lg:text-4xl mt-32 font-bold text-center">Payment Instructions</h1>
             <h3 className="w-full md:w-4/5 lg:w-2/3 text-sm md:text-xl sans text-left p-12">1) Kindly scan the QR code given below for ticket payment to Rachel Reji
             <br /><br />2) The rate per ticket is 1500/-,inclusive of entry to venue,lounges, activities,refreshments and lunch
             <br /><br />3) When making payment <b>please mention the full name of the attendee in the GPay description</b>
             <br /><br />4) After making payment,please take a <b>screenshot clearly showing the amount,description and transaction ID.</b>This will be used as proof of payment in the registration form.
                 <br /><br />5) Kindly complete the registration form provided after payment on the next step.<br /><br /> 6) Incomplete GPay registrations will not be refunded<br /><br /></h3>  
-            <img className="w-1/2 lg:w-1/4" src="/qr.jpeg" width="50%"/>
+            <img className="w-1/2 lg:w-1/4 rounded-md" src="/qr.jpeg" width="50%"/>
            
             
 
