@@ -81,7 +81,7 @@ const register = () => {
       <Navbar />
 
       {/* The main section */}
-      <div className="mx-auto text-center bg-white-dots md:w-4/5">
+      <div className="mx-auto w-full text-center md:w-4/5">
         <div className="pt-32 pb-10 mx-auto md:w-2/5 md:pb-6 lg:w-1/3">
           <Image
             className=""
@@ -91,22 +91,21 @@ const register = () => {
             loading="eager"
           />
         </div>
-        <div className="px-10">
-          <h1 className="mt-20 text-2xl font-bold text-center serif md:text-3xl lg:text-4xl">
+        <div className="px-0 sm:px-10">
+          <h1 className="serif text-3xl md:text-4xl lg:text-5xl mt-10 font-bold text-center hover:underline">
             Registration Instructions
           </h1>
-          <br></br>{" "}
-          <h3 className="w-full md:w-5/5 lg:w-7/7 text-sm md:text-xl sans text-left p-12">
-            1) There will be no refund of tickets once purchased <br /><br />
-            2) Ticket price is inclusive of entry to venue,lounges,activities,refreshments and lunch <br /> <br />
-            3) Payment will be accepted through Google pay only<br /><br />
-            4) Kindly complete the registration form provided after the payment on the next step  <br />  <br />
-            5) For any queries, kindly conatct +919447378402 (Aparna Panicker)<br /><br />
-          </h3>
+          <ol className="w-full md:w-5/5 lg:w-2/3 text-sm md:text-xl sans text-left pt-10 px-10 sm:px-12 list-decimal mx-auto">
+            <li className="py-4">There will be no refund of tickets once purchased.</li>
+            <li className="py-4">Ticket price is inclusive of entry to venue,lounges,activities,refreshments and lunch.</li>
+            <li className="py-4">Payment will be accepted through Google pay only.</li>
+            <li className="py-4">Kindly complete the registration form provided after the payment on the next step.</li>
+            <li className="py-4">For any queries, kindly contact <a href="tel:+919447378402" className="hover:text-purple-300 hover:underline">+919447378402</a> (Aparna Panicker).</li>
+          </ol>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center py-10">
+      <div className="flex flex-col justify-center py-10 text-sm md:text-xl">
         <div className="flex pb-4 space-x-3">
           <Checkbox
             checked={isChecked}
@@ -120,9 +119,9 @@ const register = () => {
         <Link href="/qr">
           <button
             disabled={!isChecked}
-            className="px-4 py-2 text-sm text-white bg-purple-500 rounded hover:bg-purple-700 lg:text-lg"
+            className="px-4 py-2 text-sm text-white bg-purple-500 rounded hover:bg-purple-700 lg:text-lg w-2/3 mx-auto mt-5"
           >
-            proceed to pay
+            Proceed to Pay
           </button>
         </Link>
       </div>
@@ -140,7 +139,7 @@ const register = () => {
           draggable
           pauseOnHover
         />
-        <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
+        <div className="w-full mt-20 text-tiny md:text-sm lg:text-lg xl:text-xl">
           <div className="bg-white-dots md:hidden">
             <img src="/register/grassMobile.png" width="1920" height="477" />
           </div>
@@ -229,12 +228,13 @@ const register = () => {
               </div>
             </div>
             <div className="flex flex-row">
-              <div className="flex-1"></div>
+              <div className="sm:flex-1"></div>
               <div className="md:flex-1"></div>
-              <div className="lg:flex-1"></div>
+              <div className="2xl:flex-1"></div>
+              <div className="2xl:flex-1"></div>
 
               <div className="flex-1">
-                <div className="p-2 text-right md:p-3 md:mt-10 rounded-xl bg-cyno">
+                <div className="p-2 text-center sm:text-right md:p-3 md:mt-10 rounded-xl bg-cyno">
                   <h1 className="pb-3 text-md">
                     Be the first one to get updates on our latest events!
                   </h1>
@@ -243,7 +243,7 @@ const register = () => {
                     className="z-50 w-full max-w-sm ml-auto"
                   >
                     <div className="flex items-center mb-2">
-                      <div className="w-1/2">
+                      <div className="w-1/3 sm:w-1/2">
                         <label
                           className="block pr-4 mb-1 text-right text-gray-100 md:mb-0"
                           htmlFor="inline-full-name"
@@ -279,7 +279,7 @@ const register = () => {
                       </div>
                     </div>
                     <div className="flex items-center mb-2">
-                      <div className="w-1/2">
+                      <div className="w-1/3 sm:w-1/2">
                         <label
                           className="block pr-4 mb-1 text-right text-gray-100 md:mb-0"
                           htmlFor="inline-password"
@@ -316,7 +316,7 @@ const register = () => {
                       </div>
                     </div>
                     <div className="flex items-center mb-2">
-                      <div className="w-1/2">
+                      <div className="w-1/3 sm:w-1/2">
                         <label
                           className="block pr-4 mb-1 text-right text-gray-100 md:mb-0"
                           htmlFor="inline-password"
@@ -352,9 +352,8 @@ const register = () => {
                         <span></span>
                       </div>
                     </div>
-                    <div className="flex items-center">
-                      <div className="w-1/2"></div>
-                      <div className="w-1/2">
+                    <div className="flex items-center justify-center sm:justify-end">
+                      <div className="">
                         <input
                           className="px-3 py-1 ml-auto text-white bg-purple-500 rounded shadow hover:bg-purple-400 focus:shadow-outline focus:outline-none"
                           type="submit"
