@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 const Partners = () => {
     return (
