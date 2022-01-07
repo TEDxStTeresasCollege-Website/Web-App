@@ -107,7 +107,7 @@ const cynosure = () => {
                     imgwidth="971"
                     imgheight="971"
                     speaker="Dr. Fathima Nilufer Sheriff"
-                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it. 
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it.
                     The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
                 />
 
@@ -117,15 +117,6 @@ const cynosure = () => {
                     imgheight="971"
                     speaker="Don Paul"
                     details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
-                />
-
-                <SpeakerCardMobile
-                    imgsrc="/cynosure/Meera.png"
-                    imgwidth="971"
-                    imgheight="971"
-                    speaker="Meera Singhania Rehani"
-                    details="Meera Singhania Rehani is a proud trans woman model who has fought for herself against the society. Her jaw-dropping performance in the Bhima Jewellery's ad has transcended all stereotypes against the LQBTQ+ community. 
-                    She has touched thousands of people with her story and continues to stand up for the community in whatever she does."
                 />
 
                 {/* Web View */}
@@ -153,7 +144,7 @@ const cynosure = () => {
                     imgwidth="971"
                     imgheight="971"
                     speaker="Dr. Fathima Nilufer Sheriff"
-                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala. A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it. 
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala. A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it.
                     The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
                 />
 
@@ -164,16 +155,6 @@ const cynosure = () => {
                     imgheight="971"
                     speaker="Don Paul"
                     details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
-                />
-
-                <SpeakerCard
-                    option='left'
-                    imgsrc="/cynosure/Meera.png"
-                    imgwidth="971"
-                    imgheight="971"
-                    speaker="Meera Singhania Rehani"
-                    details="Meera Singhania Rehani is a proud trans woman model who has fought for herself against the society. Her jaw-dropping performance in the Bhima Jewellery's ad has transcended all stereotypes against the LQBTQ+ community. 
-                    She has touched thousands of people with her story and continues to stand up for the community in whatever she does."
                 />
 
             </div>
