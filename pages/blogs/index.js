@@ -11,6 +11,18 @@ const Blogs = () => {
             url: "/blogs/1",
             imagesrc: "/team.jpg"
         },
+        {
+            title: "Selective Breeding: the fine line between Aesthetics and Abuse",
+            content: "- By Naomi Netto",
+            url: "/blogs/2",
+            imagesrc: "/team.jpg"
+        },
+        {
+            title: "Stopping by Her Shores on a Breezy Evening",
+            content: "- By Rachel Reji",
+            url: "/blogs/3",
+            imagesrc: "/team.jpg"
+        }
     ]
 
     return (
