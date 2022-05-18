@@ -108,6 +108,12 @@ export default function Home() {
                 <p className="text-lg">The Journey from a Vision to its Existence</p>
                 <p className="text-md">- By Neha Cherian</p>
                 <a href="/blogs/1" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-lg">Selective Breeding: the fine line between Aesthetics and Abuse</p>
+                <p className="text-md">- By Naomi Netto</p>
+                <a href="/blogs/2" className="text-sm hover:underline text-blue-400">Read More</a>
+                <p className="text-lg">Stopping by Her Shores on a Breezy Evening</p>
+                <p className="text-md">- By Rachel Reji</p>
+                <a href="/blogs/3" className="text-sm hover:underline text-blue-400">Read More</a>
               </div>
             </div>
           </div>
