@@ -71,7 +71,6 @@ export default function Footer() {
                                     <a href="tel:+917994262370">+917994262370</a><br />
                                 </div>
                                 <div className="py-2">
-                                    <div className="hover:underline">Co-Organizer</div>
                                     Marianne Joseph<br />
                                     <a href="tel:+918078708025">+918078708025</a><br />
                                 </div>
