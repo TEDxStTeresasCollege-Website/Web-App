@@ -19,7 +19,7 @@ const Navbar = () => {
                         <Link href="/"><a className="rounded-t navbar-link border border-gray-700">Home</a></Link>
                         <Link href="/about"><a className="navbar-link border border-gray-700 border-t-0">About TED/TEDx</a></Link>
                         {/* <Link href="/cochym"><a className="navbar-link border border-gray-700 border-t-0">Cochym</a></Link> */}
-                        <Link href="/cynosure"><a className="navbar-link border border-gray-700 border-t-0">Cynosure</a></Link>
+                        {/*<Link href="/cynosure"><a className="navbar-link border border-gray-700 border-t-0">Cynosure</a></Link>*/}
                         {/* <Link href="/circles"><a className="navbar-link border border-gray-700 border-t-0">TED Circles</a></Link> */}
                         <Link href="/partners"><a className="navbar-link border border-gray-700 border-t-0">Our Partners</a></Link>
                         <Link href="/blogs"><a className="navbar-link border border-gray-700 border-t-0">Blog</a></Link>

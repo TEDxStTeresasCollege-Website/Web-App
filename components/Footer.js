@@ -70,10 +70,10 @@ export default function Footer() {
                                     Sneha Anna George<br />
                                     <a href="tel:+917994262370">+917994262370</a><br />
                                 </div>
-                                <div className="py-2">
+                                {/*<div className="py-2">
                                     Marianne Joseph<br />
                                     <a href="tel:+918078708025">+918078708025</a><br />
-                                </div>
+                                </div>*/}
                             </div>
                             <div className="text-right flex-1">
                                 <a href="https://goo.gl/maps/oNWWs5diruyXFeVe6">
