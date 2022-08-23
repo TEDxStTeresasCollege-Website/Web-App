@@ -6,7 +6,7 @@ const TeamDetails = [
         height: "3376"
     }, {
         name: ["Sneha Anna George", "Carmel Heina Pinheiro", "Kezia Thomas", "Kate Roshan", "Nesrin KS", "Aleena K S", "Meenakshi Iyer"],
-        designation: ["Organizer", "Curator", "Event Manager", "Sponsorship and Marketing Manager", "Website Manager", "Operations Crew Head", "Design Head"],
+        designation: ["Organizer", "Curator", "Event Manager", "Sponsorship and Marketing Manager", "Website Manager", "Operations Crew Head", "Media and Design Head"],
         image: ["/coreTeam/sneha.png", "/coreTeam/carmel.png", "/coreTeam/kezia.png", "/coreTeam/kate.png", "/coreTeam/nesrin.png", "/coreTeam/aleena.png", "/coreTeam/meenakshi.png"],
     }, {
         content: "It's the era of social media and quality content is a game-changer. With pens stuck behind their ears and imaginations running wild,we present to you the curious minds who work to change your perspective towards ideas you never gave a second thought about. Here's our very own Content Curation Team!",
