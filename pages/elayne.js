@@ -57,7 +57,7 @@ const cynosure = () => {
         }
     };
     return (
-        <div className="text-white min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-cyno-1 via-cyno-2 to-cyno-3">
+        <div className="text-white min-h-screen w-full flex flex-col justify-center items-center bg-elayne-bg bg-top bg-cover">
             <Head>
                 <title>Elayne : TEDxStTeresasCollege</title>
                 <meta name="description" content="Elayne : TEDxStTeresasCollege" />
@@ -67,7 +67,7 @@ const cynosure = () => {
             <Navbar />
 
             {/* The main section */}
-            <div className="text-center bg-white-dots md:w-4/5 mx-auto">
+            <div className="text-center  md:w-4/5 mx-auto">
                 <div className="pt-32 pb-10 md:w-4/5 md:pb-6 lg:w-2/5 mx-auto">
                     <Image className="" src="/CynosureLogo.png" height={2251} width={2251} loading="eager" />
                 </div>
@@ -82,7 +82,7 @@ const cynosure = () => {
             </div>
 
             {/* Speakers section */}
-            <div className="px-5 bg-white-dots md:w-4/5 lg:w-5/6 mx-auto">
+            <div className="px-5 md:w-4/5 lg:w-5/6 mx-auto">
                 {/* Heading */}
                 <h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">Unveiling the Voices</h1>
 
@@ -161,7 +161,7 @@ const cynosure = () => {
             </div>
 
             {/* Performer LineUp */}
-            <div className="px-5 bg-white-dots w-full md:w-4/5 lg:w-5/6 mx-auto">
+            <div className="px-5  w-full md:w-4/5 lg:w-5/6 mx-auto">
                 <h1 className="serif text-4xl md:text-5xl lg:text-6xl my-20 font-bold text-center hover:underline">Performers Line Up</h1>
                 <div className="w-full md:w-4/5 mx-auto"><Slide images={elayneslider} /></div>
                 <div className="py-10 flex justify-center">
@@ -187,8 +187,8 @@ const cynosure = () => {
                     pauseOnHover
                 />
                 <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
-                    <div className="bg-white-dots md:hidden"><img src="/mobile/FooterGirl.png" width="1081" height="1453" /></div>
-                    <div className="bg-white-dots hidden md:block"><img src="/web/cynosureFooter.png" width="2673" height="1615" /></div>
+                    <div className=" md:hidden"><img src="/mobile/FooterGirl.png" width="1081" height="1453" /></div>
+                    <div className=" hidden md:block"><img src="/web/cynosureFooter.png" width="2673" height="1615" /></div>
                     <div className="p-5 lg:px-10 w-full bg-footer-black md:bg-footer-black-1">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">

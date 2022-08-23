@@ -37,6 +37,7 @@ module.exports = {
         'footer': "url('/web/footer.png')",
         'footer-mobile': "url('/mobile/footer.png')",
         'white-dots': "url('/WhiteDots.png')",
+        'elayne-bg': "url('/elayne/elaynebg.jpg')",
        }
     },
   },
