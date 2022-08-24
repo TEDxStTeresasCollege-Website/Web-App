@@ -4,7 +4,11 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Slide from '../components/Slide'
+<<<<<<< HEAD
 import cynoSlider from '../data/cynoSlider'
+=======
+import elayneslider from '../data/elayneslider'
+>>>>>>> main
 import SpeakerCard from "../components/cynosure/speakerCard";
 import SpeakerCardMobile from "../components/cynosure/speakerCardMobile";
 import { useForm } from "react-hook-form";
@@ -17,6 +21,10 @@ import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 const cynosure = () => {
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const onSubmit = async (values) => {
@@ -56,7 +64,11 @@ const cynosure = () => {
         }
     };
     return (
+<<<<<<< HEAD
         <div className="text-white min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-cyno-1 via-cyno-2 to-cyno-3">
+=======
+        <div className="text-white min-h-screen w-full flex flex-col justify-center items-center bg-elayne-bg bg-top bg-cover">
+>>>>>>> main
             <Head>
                 <title>Elayne : TEDxStTeresasCollege</title>
                 <meta name="description" content="Elayne : TEDxStTeresasCollege" />
@@ -66,6 +78,7 @@ const cynosure = () => {
             <Navbar />
 
             {/* The main section */}
+<<<<<<< HEAD
             <div className="text-center bg-white-dots md:w-4/5 mx-auto">
             <div className="px-10">
                     <br></br>
@@ -94,10 +107,24 @@ const cynosure = () => {
 Only a few who are keen to ideas, truths can see it..</p>
                     <p className="text-lg lg:text-xl xl:text-2xl pt-5">It twinkles and glows in the light of the moon
 They call me "NOOR"! </p>
+=======
+            <div className="text-center  md:w-4/5 mx-auto">
+                <div className="pt-32 pb-10 md:w-4/5 md:pb-6 lg:w-2/5 mx-auto">
+                    <Image className="" src="/CynosureLogo.png" height={2251} width={2251} loading="eager" />
+                </div>
+                <div className="px-10">
+                    <p className="text-lg lg:text-xl xl:text-2xl">A 16th century French word you may not have heard of until now, 'CYNOSURE' means "to be the centre of admiration and attention". </p>
+                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">It's about placing things that matter, in the spotlight. Because, you matter. Your struggles matter.
+                    The path that you build for yourself, matters.</p>
+                    <p className="text-lg lg:text-xl xl:text-2xl pt-5">Overcome your inhibitions and seize the spotlight, and do it with zest and pride.
+                     Be a polestar that brings new perspectives into redefined focus.
+                    Be unapologetically you. </p>
+>>>>>>> main
                 </div>
             </div>
 
             {/* Speakers section */}
+<<<<<<< HEAD
             <div className="px-5 bg-white-dots md:w-4/5 lg:w-5/6 mx-auto">
                 {/* Heading */}
                 <h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">Unveiling the Voices</h1>
@@ -202,10 +229,50 @@ They call me "NOOR"! </p>
                     audience because he hosts the popular show Vallathoru Katha 
                     which debuted in July 2020."
     />
+=======
+            <div className="px-5 md:w-4/5 lg:w-5/6 mx-auto">
+                {/* Heading */}
+                <h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">Unveiling the Voices</h1>
+
+                {/* Mobile View */}
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/gauthami.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Gauthami Nair"
+                    details="Gauthami Nair, an adept actress and a proficient director, is a name familiar to all Malayalees. Her flamboyant personality mixed with her soul-stirring acting has made her one of the most illustrious actresses in the Malyalam film industry. Having made her mark through films like The Diamond Necklace and Second Show, she also directed Vrittham, a movie that made history with an all-women crew. Currently doing research in neuroscience at Sree Chitra Hospital, Trivandrum, her determination and mettle has incited many aspiring women directors to take the big step and prove their competence in the field."
+                />
+
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/Rojin Thomas.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Rojin Thomas"
+                    details="One of most reowned film directors and scriptwriters in the Malayalam film industry, he is the brain behind some of your favourite movies like Home and Philips and the Monkey Pen. With ideas and stories that can move the most indifferent of hearts, Mr. Thomas finds a way every time to connect his stories with the daily hustles of the common man. Home is a blockbuster hit that brought many deep-rooted issues into the limelight with a simple story of a family man and was extremely well-received by the Malayali audience."
+                />
+
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/nilufer.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Dr. Fathima Nilufer Sheriff"
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it.
+                    The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
+                />
+
+                <SpeakerCardMobile
+                    imgsrc="/cynosure/Don Paul.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Don Paul"
+                    details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
+                />
+>>>>>>> main
 
                 {/* Web View */}
                 <SpeakerCard
                     option='left'
+<<<<<<< HEAD
                     imgsrc="/elayne/SHAZAM MOHAMMED (1) (1).png"
                     imgwidth="971"
                     imgheight="971"
@@ -216,10 +283,18 @@ They call me "NOOR"! </p>
                     has always been flamboyant. He explores content creation as a new job
                     opportunity and the misconceptions that exist in such an era in our
                     upcoming event."
+=======
+                    imgsrc="/cynosure/gauthami.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Gauthami Nair"
+                    details="Gauthami Nair, an adept actress and a proficient director, is a name familiar to all Malayalees. Her flamboyant personality mixed with her soul-stirring acting has made her one of the most illustrious actresses in the Malyalam film industry. Having made her mark through films like The Diamond Necklace and Second Show, she also directed Vrittham, a movie that made history with an all-women crew. Currently doing research in neuroscience at Sree Chitra Hospital, Trivandrum, her determination and mettle has incited many aspiring women directors to take the big step and prove their competence in the field."
+>>>>>>> main
                 />
 
                 <SpeakerCard
                     option='right'
+<<<<<<< HEAD
                     imgsrc="/elayne/LENAA (1).png"
                     imgwidth="971"
                     imgheight="971"
@@ -230,10 +305,18 @@ They call me "NOOR"! </p>
                     on the importance of self-realisation and finding purpose on the 29th of
                     August at TEDxStTeresasC011ege."
                     
+=======
+                    imgsrc="/cynosure/Rojin Thomas.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Rojin Thomas"
+                    details="One of most reowned film directors and scriptwriters in the Malayalam film industry, he is the brain behind some of your favourite movies like Home and Philips and the Monkey Pen. With ideas and stories that can move the most indifferent of hearts, Mr. Thomas finds a way every time to connect his stories with the daily hustles of the common man. Home is a blockbuster hit that brought many deep-rooted issues into the limelight with a simple story of a family man and was extremely well-received by the Malayali audience."
+>>>>>>> main
                 />
 
                 <SpeakerCard
                     option='left'
+<<<<<<< HEAD
                     imgsrc="/elayne/RIYA SALIM1.png"
                     imgwidth="971"
                     imgheight="971"
@@ -247,10 +330,19 @@ They call me "NOOR"! </p>
                     and happiness."
                     
                     
+=======
+                    imgsrc="/cynosure/nilufer.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Dr. Fathima Nilufer Sheriff"
+                    details="A one woman show who did it all herself and strives to do more. The builder and driving force behind the company, this enterpreneur is now known for her brand 'Therefore I'm', one of the very first wellness centers in Kerala. A brand with an army of accomplished artists who are constantly aiming to help people gain confidence in themselves and gratification to all those who endorse it.
+                    The clinic provides a top-notch transformation experience and uses globally acclaimed medical practices to treat its clients."
+>>>>>>> main
                 />
 
                 <SpeakerCard
                     option='right'
+<<<<<<< HEAD
                     imgsrc="/elayne/JEVIN ZAC (1).png"
                     imgwidth="971"
                     imgheight="971"
@@ -322,10 +414,19 @@ They call me "NOOR"! </p>
 
 
 
+=======
+                    imgsrc="/cynosure/Don Paul.png"
+                    imgwidth="971"
+                    imgheight="971"
+                    speaker="Don Paul"
+                    details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
+                />
+>>>>>>> main
 
             </div>
 
             {/* Performer LineUp */}
+<<<<<<< HEAD
             <div className="px-5 bg-white-dots w-full md:w-4/5 lg:w-5/6 mx-auto">
                 <h1 className="serif text-4xl md:text-5xl lg:text-6xl my-20 font-bold text-center hover:underline">Performers Line Up</h1>
                 <div className="w-full md:w-4/5 mx-auto"><Slide images={cynoSlider} /></div>
@@ -333,6 +434,15 @@ They call me "NOOR"! </p>
                     <Link href='/register'>
                         <button className="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded text-sm lg:text-lg">
                             Register Now
+=======
+            <div className="px-5  w-full md:w-4/5 lg:w-5/6 mx-auto">
+                <h1 className="serif text-4xl md:text-5xl lg:text-6xl my-20 font-bold text-center hover:underline">Performers Line Up</h1>
+                <div className="w-full md:w-4/5 mx-auto"><Slide images={elayneslider} /></div>
+                <div className="py-10 flex justify-center">
+                    <Link href='http://wa.me/916238774229'>
+                        <button className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded text-sm lg:text-lg">
+                            Register Now Through WhatsApp
+>>>>>>> main
                         </button>
                     </Link>
                 </div>
@@ -352,8 +462,13 @@ They call me "NOOR"! </p>
                     pauseOnHover
                 />
                 <div className="w-full mt-20 text-tiny lg:text-lg xl:text-xl">
+<<<<<<< HEAD
                     <div className="bg-white-dots md:hidden"><img src="/mobile/FooterGirl.png" width="1081" height="1453" /></div>
                     <div className="bg-white-dots hidden md:block"><img src="/web/cynosureFooter.png" width="2673" height="1615" /></div>
+=======
+                    <div className=" md:hidden"><img src="/mobile/FooterGirl.png" width="1081" height="1453" /></div>
+                    <div className=" hidden md:block"><img src="/web/cynosureFooter.png" width="2673" height="1615" /></div>
+>>>>>>> main
                     <div className="p-5 lg:px-10 w-full bg-footer-black md:bg-footer-black-1">
                         <div className="flex flex-row">
                             <div className="text-left flex-1">
@@ -364,11 +479,14 @@ They call me "NOOR"! </p>
                                     Sneha Anna George<br />
                                     <a href="tel:+917994262370">+917994262370</a><br />
                                 </div>
+<<<<<<< HEAD
                                 <div className="py-2">
                                     <div className="hover:underline">Co-Organizer</div>
                                     Marianne Joseph<br />
                                     <a href="tel:+918078708025">+918078708025</a><br />
                                 </div>
+=======
+>>>>>>> main
                             </div>
                             <div className="text-right flex-1">
                                 <a href="https://goo.gl/maps/oNWWs5diruyXFeVe6">
