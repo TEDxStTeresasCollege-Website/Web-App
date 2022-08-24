@@ -24,7 +24,7 @@ const Slide = ({images}) => {
             }} pagination={{
                 "dynamicBullets": true,
                 "clickable": true
-            }} navigation={true} className="mySwiper bg-black">
+            }} navigation={true} className="mySwiper bg-transparent">
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
                         <div className="swiper-zoom-container">
