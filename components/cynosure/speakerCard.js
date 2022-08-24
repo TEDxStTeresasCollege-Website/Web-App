@@ -2,7 +2,7 @@ const speakerCard = ({ option, imgsrc, imgwidth, imgheight, speaker, details }) 
     console.log();
     if (option == 'left') {
         return (
-            <div className="mt-20 hidden md:grid grid-cols-1 md:grid-cols-2 md:items-center">
+            <div className="mt-20 hidden md:grid grid-cols-1 md:grid-cols-2 gap-0 md:items-center">
                 <div className="mx-auto p-5 md:p-0 md:pr-5 lg:w-2/3">
                     <img className="" src={imgsrc} width={imgwidth} height={imgheight}></img>
                 </div>
