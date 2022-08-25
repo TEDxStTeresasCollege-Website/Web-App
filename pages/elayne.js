@@ -7,6 +7,7 @@ import Slide from "../components/Slide";
 import elayneslider from "../data/elayneslider";
 import SpeakerCard from "../components/cynosure/speakerCard";
 import SpeakerCardMobile from "../components/cynosure/speakerCardMobile";
+
 import { useForm } from "react-hook-form";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -140,11 +141,11 @@ const elayne = () => {
       </div>
 
       {/* Speakers section */}
-      <div className="px-5 bg-white-dots md:w-4/5 lg:w-5/6 mx-auto">
+      <div className="px-5 bg-white-dots md:w-4/5 lg:w-5/6 mx-auto"><br></br><br></br>
         {/* Heading */}
         <h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">
           Unveiling the Voices
-        </h1>
+        </h1><br></br><br></br>
         {/* Mobile View */}
         <SpeakerCardMobile
           imgsrc="/elayne/SHAZAM MOHAMMED (1) (1).png"
@@ -167,7 +168,7 @@ const elayne = () => {
                     failed to amaze us through her ground-breaking performances. She is
                     also an entrepreneur and a scriptwriter. She would enlighten the audience
                     on the importance of self-realisation and finding purpose on the 29th of
-                    August at TEDxStTeresasC011ege."
+                    August at TEDxStTeresasCollege."
         />
         <SpeakerCardMobile
           imgsrc="/elayne/RIYA SALIM1.png"
@@ -191,7 +192,7 @@ const elayne = () => {
                     Jevin Zac is a socially-motivated entrepreneur who has worked
                     to reduce the carbon footprint. He will be joining us to narrate
                     his story of the person he is today. Get a chance to hear from him
-                    at TEDxStTeresasC011ege."
+                    at TEDxStTeresasCollege."
         />
         <SpeakerCardMobile
           imgsrc="/elayne/RESHMA SEBASTIAN (1).png"
@@ -200,7 +201,7 @@ const elayne = () => {
           speaker="Reshma Sebastian"
           details="RESHMA SEBASTIAN
                     An engineer, model and actress reknowned for her famous role in
-                    the movie Charlie,She started her career in the year2011 and has
+                    the movie Charlie, She started her career in the year2011 and has
                     never turned back since.
                     Our speaker Reshma Sebastian is going to talk about the importance
                     and advantages of financial independence for young women. "
@@ -242,15 +243,16 @@ const elayne = () => {
                     audience because he hosts the popular show Vallathoru Katha 
                     which debuted in July 2020."
         />
-        =========
+        
+        
         <div className="px-5 md:w-4/5 lg:w-5/6 mx-auto">
           {/* Heading */}
-          <h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">
+          {/*<h1 className="serif text-4xl md:text-5xl lg:text-6xl mt-20 font-bold text-center hover:underline">
             Unveiling the Voices
-          </h1>
+          </h1>*/}
 
           {/* Mobile View */}
-          <SpeakerCardMobile
+          {/* <SpeakerCardMobile
             imgsrc="/cynosure/gauthami.png"
             imgwidth="971"
             imgheight="971"
@@ -281,7 +283,7 @@ const elayne = () => {
             imgheight="971"
             speaker="Don Paul"
             details="A young humanitarian who uses his engineering skills to help the differently abled, Don Paul began his journey with just a student startup. With his steadfast dedication and grit, Desintox Technologies has gone on to become an organization that creates innovations to help out people whose physical abilities are compromised. A hero without a cape but a man on a mission, Mr. Don Paul is a harbinger for change and a person set to make reality of an inclusive society for differently abled people across the country."
-          />
+          />*/}
 
           {/* Web View */}
           <SpeakerCard
@@ -308,7 +310,7 @@ const elayne = () => {
                     failed to amaze us through her ground-breaking performances. She is
                     also an entrepreneur and a scriptwriter. She would enlighten the audience
                     on the importance of self-realisation and finding purpose on the 29th of
-                    August at TEDxStTeresasC011ege."
+                    August at TEDxStTeresasCollege."
           />
 
           <SpeakerCard
@@ -336,7 +338,7 @@ const elayne = () => {
                     is a socially-motivated entrepreneur who has worked
                     to reduce the carbon footprint. He will be joining us to narrate
                     his story of the person he is today. Get a chance to hear from him
-                    at TEDxStTeresasC011ege."
+                    at TEDxStTeresasCollege."
           />
           <SpeakerCard
             option="left"
