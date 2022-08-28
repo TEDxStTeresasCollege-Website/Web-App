@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Slide from "../components/Slide";
-import elayneslider from "../data/elayneslider";
+import elayneSlider from "../data/elayneSlider";
 import SpeakerCard from "../components/cynosure/speakerCard";
 import SpeakerCardMobile from "../components/cynosure/speakerCardMobile";
 
@@ -400,7 +400,7 @@ const elayne = () => {
             Performers Line Up
           </h1>
           <div className="w-full md:w-4/5 mx-auto">
-            <Slide images={elayneslider} />
+            <Slide images={elayneSlider} />
           </div>
           <div className="py-10 flex justify-center">
             <Link href="http://wa.me/916238774229">
