@@ -1,4 +1,4 @@
-const elayneslider = [
+const elayneSlider = [
     "/elayne/ROHIT NAIR AND NANDAGOPAN.png",
     "/elayne/myself and my moves.png",
     "/elayne/REMA JEEVAN .png",
@@ -7,4 +7,4 @@ const elayneslider = [
     "/elayne/FIREN.png",
 ];
 
-export default elayneslider
+export default elayneSlider
